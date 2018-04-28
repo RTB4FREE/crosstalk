@@ -1,10 +1,21 @@
 Crosstalk
 =====================
 
-These are the Docker instructions for working with Crosstalk
+Crosstalk is a JAVA 1.8 based interface between the campaign manager and the bidders. The campaign manager creates, edits and maintains
+its campaigns in a MySQL database. Crosstalk converts those MySQL tables into a JSON representation of the campaigns as understood by
+the bidders. 
+
+Crosstalk loads the JSON representation of the campaigns into 'zerospike', which is the shared context of the bidders. Crosstalk
+then tells which campaigns in the zerospike store the bidders should load.
+
+Crosstalk also handles budgets. Querying Elastic Search, it know up to the minute what the spend on all campaigns are. If a campaign
+exceeds its budget then crosstalk will tell the bidders to unload the running campaign.
+
 
 No Source Deployments
 ===========================
+
+Crosstalk is designed to run as a Docker cintainer.
 
 Docker Swarm
 ---------------------------
@@ -49,7 +60,7 @@ To run the entire crosstalk. bidder, zerospike, kafka and zookeeper as a swarm:
     # Join any workers, if desired; then,
     #
     
-    $docker stack deploy -c docker-compose.yml rtb
+    $docker stack deploy -c docker-compose.yml crosstalk
    
 Working with Source
 ---------------------------------
@@ -63,13 +74,13 @@ If you want to modify the code.
 
    $mvn assembly:assembly -DdescriptorId=jar-with-dependencies  -Dmaven.test.skip=true
    
-4. Make the docker images locally:
+4. Make the docker images locally (note change your repo from jacamars to your repo):
 
-   $docker build -t jacamars/crosstalk:v1 -f Docker.crosstalk .
+   $docker build -t jacamars/crosstalk -f Docker.crosstalk .
    
 5. If you need to push to the repo:
 
-   $docker push jacamars/crosstalk:v1
+   $docker push jacamars/crosstalk
    
 Changing Operational Parameters
 -------------------------------------
@@ -79,13 +90,13 @@ config.json and modified it and you called it ./myconfig.json. You modify the bi
 docker-compose.yml to mount. Note the volumes directive:
 
   crosstalk:
-    image: "64.94.191.15:5000/crosstalk"
+    image: "jacamars/crosstalk"
     ports:
       - "8200:8200"
     environment:
       REGION: "AP"
-      GHOST: "54.154.34.75"
-      AHOST: "54.164.51.156"
+      GHOST: "$GHOST"
+      AHOST: "$AHOST"
       BROKERLIST: "kafka:9092"
       PUBSUB: "zerospike"
       CONTROL: "8100"
@@ -298,7 +309,7 @@ You can run crosstalk in development mode if you do the following.
    Crosstalk specific:
    
    $CONTROL         "8100"
-   $JDBC            "jdbc:mysql://54.90.90.54/rtb4free?user=ben&password=whatweneednowislove"
+   $JDBC            "jdbc:mysql://localhost/rtb4free?user=ben&password=test"
    
    Shared with the bidder:
    
