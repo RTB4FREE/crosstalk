@@ -1,0 +1,22 @@
+ {
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "query_string": {
+            "analyze_wildcard": true,
+            "query": "*"
+          }
+        }
+      ]
+    }
+  },
+  "size": 1,
+  "sort": [
+    {
+      "@timestamp": {
+        "order": "desc"
+      }
+    }
+  ]
+}

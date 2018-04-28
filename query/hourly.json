@@ -1,0 +1,56 @@
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "query_string": {
+            "analyze_wildcard": true,
+            "query": "type:wins"
+          }
+        },
+        {
+          "range": {
+            "@timestamp": {
+              "gte": 1497980455805,
+              "lte": 1497984055805,
+              "format": "epoch_millis"
+            }
+          }
+        }
+      ],
+      "must_not": []
+    }
+  },
+  "_source": {
+    "excludes": []
+  },
+  "aggs": {
+    "3": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "1h",
+        "time_zone": "America/Los_Angeles",
+        "min_doc_count": 1
+      },
+      "aggs": {
+        "2": {
+          "terms": {
+            "field": "cridId.keyword",
+            "size": 10000,
+            "order": {
+              "1": "desc"
+            }
+          },
+          "aggs": {
+            "1": {
+              "sum": {
+                "field": "price"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# This runs the Crosstalk server
+#
+java -Dlog4j.configuration="file:log4j.properties" -cp target/Crosstalk-0.0.1-SNAPSHOT-jar-with-dependencies.jar:libs/Bidder-0.0.1-SNAPSHOT.jar com.jacamars.dsp.crosstalk.manager.Crosstalk $1 $2 $3 $4

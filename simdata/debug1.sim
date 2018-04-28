@@ -1,0 +1,5921 @@
+[ {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "406",
+    "hourly_price" : 4.797649999999885,
+    "daily_price" : 82.43559999996886,
+    "total_price" : 422.3186499999689,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "406",
+    "hourly_price" : 0.0,
+    "daily_price" : 1.1979500000000074,
+    "total_price" : 14.868100000000007,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "406",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.1001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "260",
+  "hourly_price" : 4.797649999999885,
+  "daily_price" : 83.63354999997146,
+  "total_price" : 788.2289999999714,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "403",
+    "hourly_price" : 2.813849999999954,
+    "daily_price" : 36.89854999999284,
+    "total_price" : 217.74024999999284,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "403",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.6305000000000023,
+    "total_price" : 6.279650000000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "403",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.04485,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "257",
+  "hourly_price" : 2.813849999999954,
+  "daily_price" : 37.52904999999248,
+  "total_price" : 288.60324999999256,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "402",
+    "hourly_price" : 2.173599999999977,
+    "daily_price" : 37.08639999999273,
+    "total_price" : 221.1163499999928,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "402",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.608400000000002,
+    "total_price" : 6.138600000000003,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "402",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.11700000000000003,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "256",
+  "hourly_price" : 2.173599999999977,
+  "daily_price" : 37.694799999992384,
+  "total_price" : 378.00424999999234,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "404",
+    "hourly_price" : 1.2610000000000072,
+    "daily_price" : 15.47455000000132,
+    "total_price" : 117.70785000000132,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "404",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.14299999999999988,
+    "total_price" : 1.924,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "404",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.01105,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "258",
+  "hourly_price" : 1.2610000000000072,
+  "daily_price" : 15.61755000000134,
+  "total_price" : 217.54590000000127,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "401",
+    "hourly_price" : 0.25024999999999964,
+    "daily_price" : 5.422299999999916,
+    "total_price" : 49.51439999999992,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "401",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.06695000000000002,
+    "total_price" : 0.6435000000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "401",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0052,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "255",
+  "hourly_price" : 0.25024999999999964,
+  "daily_price" : 5.489249999999926,
+  "total_price" : 79.00619999999994,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "145",
+    "hourly_price" : 0.07272871999999903,
+    "daily_price" : 7.138308730003771,
+    "total_price" : 155.80879665000387,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "146",
+    "hourly_price" : 0.005803960000000003,
+    "daily_price" : 0.4904362600000022,
+    "total_price" : 18.396554390000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "145",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.44619390000001613,
+    "total_price" : 1.565415070000016,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "146",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.039118249999999744,
+    "total_price" : 0.12862152999999976,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "97",
+  "hourly_price" : 0.07853267999999883,
+  "daily_price" : 8.1140571400047,
+  "total_price" : 1892.4031417900064,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "116",
+    "hourly_price" : 0.009311890000000008,
+    "daily_price" : 0.4303081099999776,
+    "total_price" : 80.22890589999999,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "100",
+    "hourly_price" : 0.00896229000000001,
+    "daily_price" : 0.4275610899999777,
+    "total_price" : 80.2390095,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "113",
+    "hourly_price" : 0.00877104000000001,
+    "daily_price" : 0.42854535999997756,
+    "total_price" : 0.42854535999997756,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "106",
+    "hourly_price" : 0.008750630000000007,
+    "daily_price" : 0.4250008599999781,
+    "total_price" : 80.24689295999995,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "109",
+    "hourly_price" : 0.008718400000000008,
+    "daily_price" : 0.42493011999997765,
+    "total_price" : 80.22050634999995,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "103",
+    "hourly_price" : 0.00849211000000001,
+    "daily_price" : 0.4271366699999776,
+    "total_price" : 80.21765303000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "104",
+    "hourly_price" : 0.0017218899999999998,
+    "daily_price" : 0.21486160000000168,
+    "total_price" : 0.21486160000000168,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "115",
+    "hourly_price" : 0.0016800500000000002,
+    "daily_price" : 0.18289739999999927,
+    "total_price" : 0.18289739999999927,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "111",
+    "hourly_price" : 0.00161803,
+    "daily_price" : 0.1865079699999994,
+    "total_price" : 0.1865079699999994,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "107",
+    "hourly_price" : 0.0016077100000000003,
+    "daily_price" : 0.18613007999999934,
+    "total_price" : 0.18613007999999934,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "101",
+    "hourly_price" : 0.0015378400000000002,
+    "daily_price" : 0.18526186999999936,
+    "total_price" : 0.18526186999999936,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "99",
+    "hourly_price" : 0.0015333100000000002,
+    "daily_price" : 0.1855519799999994,
+    "total_price" : 0.1855519799999994,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "106",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.04829423999999994,
+    "total_price" : 0.16885947999999998,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "109",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.04749443999999993,
+    "total_price" : 0.16677468999999992,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "113",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.046178709999999915,
+    "total_price" : 0.16426542999999993,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "116",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.04597436999999991,
+    "total_price" : 0.16488994999999992,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "103",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0455420699999999,
+    "total_price" : 0.16291695999999992,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "100",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.04440228999999986,
+    "total_price" : 0.04440228999999986,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "104",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.01391841000000002,
+    "total_price" : 0.01391841000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "101",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.013226120000000017,
+    "total_price" : 0.013226120000000017,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "107",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.013066620000000017,
+    "total_price" : 0.013066620000000017,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "115",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.012285490000000015,
+    "total_price" : 0.012285490000000015,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "99",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.011755340000000013,
+    "total_price" : 0.011755340000000013,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "111",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.011684840000000012,
+    "total_price" : 0.011684840000000012,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "109",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.6450000000000003E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "113",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.6450000000000003E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "85",
+  "hourly_price" : 0.06270519000000019,
+  "daily_price" : 4.058516049997965,
+  "total_price" : 1333.1879628099969,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "356",
+    "hourly_price" : 0.03360000000000001,
+    "daily_price" : 2.523199999999942,
+    "total_price" : 37.391999999999946,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "354",
+    "hourly_price" : 0.027600000000000006,
+    "daily_price" : 2.5307999999999415,
+    "total_price" : 37.68759999999995,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "357",
+    "hourly_price" : 0.0,
+    "daily_price" : 8.0E-4,
+    "total_price" : 12.303599999999998,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "355",
+    "hourly_price" : 0.0,
+    "daily_price" : 4.0E-4,
+    "total_price" : 12.348,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "354",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.21479999999999957,
+    "total_price" : 0.6447999999999996,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "356",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.21159999999999957,
+    "total_price" : 0.6231999999999995,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "348",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "357",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.9828000000000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "355",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.9428,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "356",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.07160000000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "354",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.07000000000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "202",
+  "hourly_price" : 0.061200000000000025,
+  "daily_price" : 5.481599999999876,
+  "total_price" : 161.68609999999993,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "229",
+    "hourly_price" : 0.009312100000000014,
+    "daily_price" : 0.468719890000002,
+    "total_price" : 117.33432293999995,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "245",
+    "hourly_price" : 0.007482020000000005,
+    "daily_price" : 0.4202799300000123,
+    "total_price" : 9.529347800000012,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "242",
+    "hourly_price" : 0.007237470000000004,
+    "daily_price" : 0.4174569900000123,
+    "total_price" : 9.492626020000014,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "237",
+    "hourly_price" : 0.006927070000000002,
+    "daily_price" : 0.41741495000001244,
+    "total_price" : 9.530109020000015,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "233",
+    "hourly_price" : 0.006723530000000002,
+    "daily_price" : 0.420588550000012,
+    "total_price" : 9.53358375000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "231",
+    "hourly_price" : 0.0029747099999999993,
+    "daily_price" : 0.20386490000000282,
+    "total_price" : 0.20386490000000282,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "235",
+    "hourly_price" : 0.00293069,
+    "daily_price" : 0.20190698000000254,
+    "total_price" : 0.20190698000000254,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "243",
+    "hourly_price" : 0.0027779799999999998,
+    "daily_price" : 0.20014280000000234,
+    "total_price" : 0.20014280000000234,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "246",
+    "hourly_price" : 0.002359590000000001,
+    "daily_price" : 0.20215725000000243,
+    "total_price" : 0.20215725000000243,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "240",
+    "hourly_price" : 0.0022242000000000013,
+    "daily_price" : 0.2005068800000024,
+    "total_price" : 0.2005068800000024,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "229",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.03644406000000005,
+    "total_price" : 0.13123795000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "233",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.03252516000000006,
+    "total_price" : 0.11275994000000009,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "237",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.03189091000000005,
+    "total_price" : 0.11001403000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "242",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.031363570000000056,
+    "total_price" : 0.10789110000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "245",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.03089964000000006,
+    "total_price" : 0.10831838000000006,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "246",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.018369700000000058,
+    "total_price" : 0.018369700000000058,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "231",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.01789918000000006,
+    "total_price" : 0.01789918000000006,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "235",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.01788883000000006,
+    "total_price" : 0.01788883000000006,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "240",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.01775372000000006,
+    "total_price" : 0.01775372000000006,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "243",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.017749990000000056,
+    "total_price" : 0.017749990000000056,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "229",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.205E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "233",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 5.323E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "242",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 5.2680000000000004E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "237",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 3.901E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "245",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 3.8769999999999996E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "135",
+  "hourly_price" : 0.0509493599999997,
+  "daily_price" : 3.4058238800000415,
+  "total_price" : 959.2562721799999,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "129",
+    "hourly_price" : 0.004749130000000001,
+    "daily_price" : 0.6700475400000336,
+    "total_price" : 118.86121708000006,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "105",
+    "hourly_price" : 0.004616320000000001,
+    "daily_price" : 0.6712497600000327,
+    "total_price" : 0.6712497600000327,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "119",
+    "hourly_price" : 0.004603090000000002,
+    "daily_price" : 0.6652197500000343,
+    "total_price" : 118.76411679000006,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "114",
+    "hourly_price" : 0.004482600000000002,
+    "daily_price" : 0.6689218100000331,
+    "total_price" : 118.77776221999999,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "117",
+    "hourly_price" : 0.004411290000000003,
+    "daily_price" : 0.5148128600000251,
+    "total_price" : 0.5148128600000251,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "112",
+    "hourly_price" : 0.004328790000000003,
+    "daily_price" : 0.511175340000025,
+    "total_price" : 0.511175340000025,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "125",
+    "hourly_price" : 0.004162950000000001,
+    "daily_price" : 0.6669257500000326,
+    "total_price" : 118.77560575999996,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "110",
+    "hourly_price" : 0.004036330000000001,
+    "daily_price" : 0.6677832500000337,
+    "total_price" : 118.73504935000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "122",
+    "hourly_price" : 0.0040331800000000025,
+    "daily_price" : 0.5138325400000252,
+    "total_price" : 0.5138325400000252,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "102",
+    "hourly_price" : 0.003999430000000003,
+    "daily_price" : 0.5159032100000253,
+    "total_price" : 0.5159032100000253,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "108",
+    "hourly_price" : 0.0038481800000000023,
+    "daily_price" : 0.5180139400000254,
+    "total_price" : 0.5180139400000254,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "127",
+    "hourly_price" : 0.003588190000000002,
+    "daily_price" : 0.5146330300000252,
+    "total_price" : 0.5146330300000252,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "114",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.04339424999999986,
+    "total_price" : 0.18249348999999984,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "119",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.043152689999999855,
+    "total_price" : 0.18241306999999984,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "125",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.04235039999999986,
+    "total_price" : 0.18225148999999985,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "110",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.042221089999999864,
+    "total_price" : 0.18026928999999986,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "129",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.04221467999999986,
+    "total_price" : 0.04221467999999986,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "105",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.04204108999999986,
+    "total_price" : 0.17961740999999984,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "112",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.02976770999999991,
+    "total_price" : 0.02976770999999991,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "102",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.029304859999999912,
+    "total_price" : 0.029304859999999912,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "117",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.028542189999999922,
+    "total_price" : 0.028542189999999922,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "122",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.028460999999999924,
+    "total_price" : 0.028460999999999924,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "108",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.028125489999999934,
+    "total_price" : 0.028125489999999934,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "127",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.02797139999999993,
+    "total_price" : 0.02797139999999993,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "108",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 3.0E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "127",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.875E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "114",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.323E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "87",
+  "hourly_price" : 0.05085947999999987,
+  "daily_price" : 7.5260656299941875,
+  "total_price" : 4144.1413551399955,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "399",
+    "hourly_price" : 0.026690999999999996,
+    "daily_price" : 0.5234039999999995,
+    "total_price" : 3.19641,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "399",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.012369,
+    "total_price" : 0.090489,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "253",
+  "hourly_price" : 0.026690999999999996,
+  "daily_price" : 0.5357729999999995,
+  "total_price" : 5.481397000000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "250",
+    "hourly_price" : 0.0021975200000000005,
+    "daily_price" : 0.08675033999999758,
+    "total_price" : 1.9105047199999972,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "254",
+    "hourly_price" : 0.0021933100000000004,
+    "daily_price" : 0.0864380899999976,
+    "total_price" : 1.9048914599999975,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "259",
+    "hourly_price" : 0.00210231,
+    "daily_price" : 0.08707884999999757,
+    "total_price" : 1.9175547599999976,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "263",
+    "hourly_price" : 0.00202329,
+    "daily_price" : 0.08730990999999755,
+    "total_price" : 1.9148320199999973,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "256",
+    "hourly_price" : 0.0018986800000000005,
+    "daily_price" : 0.08636424999999762,
+    "total_price" : 1.904297959999997,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "249",
+    "hourly_price" : 1.4380000000000001E-5,
+    "daily_price" : 8.622900000000001E-4,
+    "total_price" : 8.622900000000001E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "255",
+    "hourly_price" : 1.4380000000000001E-5,
+    "daily_price" : 7.950900000000001E-4,
+    "total_price" : 7.950900000000001E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "252",
+    "hourly_price" : 1.323E-5,
+    "daily_price" : 8.6296E-4,
+    "total_price" : 8.6296E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "258",
+    "hourly_price" : 1.323E-5,
+    "daily_price" : 0.0011380900000000002,
+    "total_price" : 0.0011380900000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "262",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0010071000000000001,
+    "total_price" : 0.0010071000000000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "259",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.005652669999999995,
+    "total_price" : 0.022386029999999998,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "256",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.005237019999999993,
+    "total_price" : 0.021408719999999992,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "254",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.005124099999999994,
+    "total_price" : 0.020869069999999997,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "250",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.005052519999999993,
+    "total_price" : 0.021283229999999993,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "263",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.004807259999999993,
+    "total_price" : 0.02013701999999999,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "258",
+    "hourly_price" : 0.0,
+    "daily_price" : 5.407000000000001E-5,
+    "total_price" : 5.407000000000001E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "255",
+    "hourly_price" : 0.0,
+    "daily_price" : 4.084E-5,
+    "total_price" : 4.084E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "262",
+    "hourly_price" : 0.0,
+    "daily_price" : 3.969E-5,
+    "total_price" : 3.969E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "252",
+    "hourly_price" : 0.0,
+    "daily_price" : 2.761E-5,
+    "total_price" : 2.761E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "256",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 4.0E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "250",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.0E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "259",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.0E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "263",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.0E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "137",
+  "hourly_price" : 0.010470330000000016,
+  "daily_price" : 0.4646427500000458,
+  "total_price" : 106.25483930000003,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "387",
+    "hourly_price" : 0.010199999999999999,
+    "daily_price" : 0.6718000000000045,
+    "total_price" : 2.6614000000000044,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "387",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0396,
+    "total_price" : 0.1626,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "242",
+  "hourly_price" : 0.010199999999999999,
+  "daily_price" : 0.7114000000000024,
+  "total_price" : 3.868800000000003,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "141",
+    "hourly_price" : 0.005257729999999997,
+    "daily_price" : 0.564748300000035,
+    "total_price" : 13.508492900000036,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "142",
+    "hourly_price" : 0.00242992,
+    "daily_price" : 0.11791319999999658,
+    "total_price" : 3.257502789999999,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "141",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.03788489999999999,
+    "total_price" : 0.15298644,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "142",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.00598669,
+    "total_price" : 0.027106240000000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "96",
+  "hourly_price" : 0.007687650000000003,
+  "daily_price" : 0.7265330900000068,
+  "total_price" : 423.5009668400001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "198",
+    "hourly_price" : 0.00488,
+    "daily_price" : 0.5068395099999913,
+    "total_price" : 11.973383689999991,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "198",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.038324830000000025,
+    "total_price" : 0.13116769000000003,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "198",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.12642067000000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "113",
+  "hourly_price" : 0.00488,
+  "daily_price" : 0.5451643399999905,
+  "total_price" : 38.76653874999999,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "140",
+    "hourly_price" : 0.0035901599999999968,
+    "daily_price" : 0.2762541400000142,
+    "total_price" : 7.463051780000014,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "139",
+    "hourly_price" : 7.689300000000001E-4,
+    "daily_price" : 0.05908073999999911,
+    "total_price" : 1.3194218799999993,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "140",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.018430140000000043,
+    "total_price" : 0.07460969000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "139",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0038202699999999963,
+    "total_price" : 0.016606399999999997,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "94",
+  "hourly_price" : 0.004359089999999995,
+  "daily_price" : 0.3575852900000249,
+  "total_price" : 440.83132905000014,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "unknown",
+    "id" : "358",
+    "hourly_price" : 0.004,
+    "daily_price" : 0.004,
+    "total_price" : 3.628,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "358",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 3.696,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "203",
+  "hourly_price" : 0.004,
+  "daily_price" : 0.004,
+  "total_price" : 7.9799999999999995,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "144",
+    "hourly_price" : 0.003335539999999997,
+    "daily_price" : 0.40860118000003215,
+    "total_price" : 6.491360670000031,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "143",
+    "hourly_price" : 2.7292E-4,
+    "daily_price" : 0.023343380000000056,
+    "total_price" : 1.0093427099999999,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "144",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.032587220000000014,
+    "total_price" : 0.10958445000000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "143",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0015936000000000004,
+    "total_price" : 0.0057601100000000014,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "95",
+  "hourly_price" : 0.003608459999999997,
+  "daily_price" : 0.4661253800000375,
+  "total_price" : 938.540021980001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "132",
+    "hourly_price" : 9.487900000000001E-4,
+    "daily_price" : 0.07078929000000009,
+    "total_price" : 2.4828969599999993,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "131",
+    "hourly_price" : 8.1938E-4,
+    "daily_price" : 0.06657688000000014,
+    "total_price" : 2.24747369,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "134",
+    "hourly_price" : 6.325200000000001E-4,
+    "daily_price" : 0.0636700900000001,
+    "total_price" : 2.241175240000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "133",
+    "hourly_price" : 4.8876E-4,
+    "daily_price" : 0.06501130000000013,
+    "total_price" : 2.2433210799999994,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "130",
+    "hourly_price" : 4.3126E-4,
+    "daily_price" : 0.061699770000000084,
+    "total_price" : 0.061699770000000084,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "128",
+    "hourly_price" : 2.7313E-4,
+    "daily_price" : 0.0636985100000001,
+    "total_price" : 2.2476937700000006,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "132",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.005143240000000002,
+    "total_price" : 0.021945100000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "133",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.004311440000000003,
+    "total_price" : 0.019747450000000007,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "131",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.004068220000000002,
+    "total_price" : 0.004068220000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "128",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.003996470000000002,
+    "total_price" : 0.018829880000000007,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "130",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.003853880000000002,
+    "total_price" : 0.019005540000000008,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "134",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.003636970000000002,
+    "total_price" : 0.017910490000000008,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "88",
+  "hourly_price" : 0.0035938400000000014,
+  "daily_price" : 500.41645606000001817,
+  "total_price" : 208.4094755300001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "197",
+    "hourly_price" : 0.0033192499999999997,
+    "daily_price" : 0.5636188399999902,
+    "total_price" : 14.318188709999994,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "197",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.047375810000000046,
+    "total_price" : 0.14275506000000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "197",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.10208114000000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "112",
+  "hourly_price" : 0.0033192499999999997,
+  "daily_price" : 0.6109946499999893,
+  "total_price" : 30.069866309999977,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "212",
+    "hourly_price" : 3.0E-4,
+    "daily_price" : 0.021199999999999965,
+    "total_price" : 0.021199999999999965,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "204",
+    "hourly_price" : 2.5E-4,
+    "daily_price" : 0.023949999999999957,
+    "total_price" : 0.023949999999999957,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "208",
+    "hourly_price" : 2.5E-4,
+    "daily_price" : 0.023649999999999956,
+    "total_price" : 0.023649999999999956,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "210",
+    "hourly_price" : 2.5E-4,
+    "daily_price" : 0.022799999999999963,
+    "total_price" : 0.022799999999999963,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "213",
+    "hourly_price" : 2.5E-4,
+    "daily_price" : 0.018098499999999976,
+    "total_price" : 0.018098499999999976,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "206",
+    "hourly_price" : 2.0E-4,
+    "daily_price" : 0.023649999999999956,
+    "total_price" : 0.023649999999999956,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "202",
+    "hourly_price" : 1.5000000000000001E-4,
+    "daily_price" : 0.02374999999999996,
+    "total_price" : 0.02374999999999996,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "203",
+    "hourly_price" : 1.0E-4,
+    "daily_price" : 0.018499999999999975,
+    "total_price" : 0.5118468100000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "207",
+    "hourly_price" : 1.0E-4,
+    "daily_price" : 0.01929844999999997,
+    "total_price" : 0.50349452,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "209",
+    "hourly_price" : 1.0E-4,
+    "daily_price" : 0.01799822999999998,
+    "total_price" : 0.5150388399999999,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "211",
+    "hourly_price" : 1.0E-4,
+    "daily_price" : 0.017648569999999978,
+    "total_price" : 0.50998384,
+    "delta" : {
+      "std" : "NaN",
+      "average" : 0.0
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "205",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.017898899999999975,
+    "total_price" : 0.5070400700000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "202",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.00155,
+    "total_price" : 0.005449999999999999,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "208",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0014,
+    "total_price" : 0.006300000000000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "210",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.00125,
+    "total_price" : 0.00125,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "209",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0012,
+    "total_price" : 0.0046500000000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "205",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0011500000000000002,
+    "total_price" : 0.0011500000000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "206",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.00115,
+    "total_price" : 0.00445,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "204",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0011,
+    "total_price" : 0.0045000000000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "212",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0011,
+    "total_price" : 0.0011,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "207",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0010500000000000002,
+    "total_price" : 0.0010500000000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "203",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.001,
+    "total_price" : 0.001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "211",
+    "hourly_price" : 0.0,
+    "daily_price" : 8.0E-4,
+    "total_price" : 8.0E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "213",
+    "hourly_price" : 0.0,
+    "daily_price" : 7.499999999999999E-4,
+    "total_price" : 7.499999999999999E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "205",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 3.4636E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "211",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 3.0000000000000003E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "207",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.9702E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "213",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.5E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "209",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.4939E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "117",
+  "hourly_price" : 0.0020499999999999997,
+  "daily_price" : 0.26194264999999584,
+  "total_price" : 8.479314239999988,
+  "delta" : {
+    "std" : "NaN",
+    "average" : 0.0
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "485",
+    "hourly_price" : 0.0,
+    "daily_price" : 3.3678734999999995,
+    "total_price" : 3.3718734999999995,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "482",
+    "hourly_price" : 0.0,
+    "daily_price" : 3.275,
+    "total_price" : 3.29223796,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "484",
+    "hourly_price" : 0.0,
+    "daily_price" : 3.14,
+    "total_price" : 3.1470000000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "483",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.23,
+    "total_price" : 0.231,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "315",
+  "hourly_price" : 0.0,
+  "daily_price" : 10.0128735,
+  "total_price" : 10.04211146,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "472",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.4967461700000118,
+    "total_price" : 0.4967461700000118,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "471",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.38537738000001204,
+    "total_price" : 0.38537738000001204,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "472",
+    "hourly_price" : 0.0,
+    "daily_price" : 7.986E-5,
+    "total_price" : 7.986E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "324",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.8822034099999609,
+  "total_price" : 0.8822034099999609,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "456",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.3345,
+    "total_price" : 4.143,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "453",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0905,
+    "total_price" : 2.5220000000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "454",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0355,
+    "total_price" : 0.659,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "466",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.035,
+    "total_price" : 0.6335000000000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "457",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.009,
+    "total_price" : 0.166,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "455",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.004,
+    "total_price" : 0.004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "461",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.001,
+    "total_price" : 0.001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "464",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.001,
+    "total_price" : 0.001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "454",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.694,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "453",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.6675,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "456",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.651,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "466",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.1115,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "457",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.1045,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "297",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.5105,
+  "total_price" : 10.5115,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "469",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.009,
+    "total_price" : 0.0545,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "318",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.009,
+  "total_price" : 0.0545,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "unknown",
+    "id" : "433",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.00437445,
+    "total_price" : 0.017522100000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "434",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1117.97763255,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "419",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 985.9227966000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "431",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 553.1280070500002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "436",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 73.49898465,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "433",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 47.9050875,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "419",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.03931695000000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "431",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.026381250000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "433",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.013147650000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "419",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.034996049999999994,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "431",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.013148100000000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "278",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.00437445,
+  "total_price" : 2782.6973482500007,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "124",
+    "hourly_price" : 0.0,
+    "daily_price" : 3.5548000000000003E-4,
+    "total_price" : 0.017284389999999997,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "120",
+    "hourly_price" : 0.0,
+    "daily_price" : 2.1485000000000002E-4,
+    "total_price" : 0.016600329999999996,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "126",
+    "hourly_price" : 0.0,
+    "daily_price" : 1.9611000000000002E-4,
+    "total_price" : 0.016390559999999995,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "123",
+    "hourly_price" : 0.0,
+    "daily_price" : 1.9438E-4,
+    "total_price" : 0.017280810000000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "118",
+    "hourly_price" : 0.0,
+    "daily_price" : 1.4894000000000002E-4,
+    "total_price" : 1.4894000000000002E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "121",
+    "hourly_price" : 0.0,
+    "daily_price" : 1.4378E-4,
+    "total_price" : 0.017766979999999998,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "123",
+    "hourly_price" : 0.0,
+    "daily_price" : 2.875E-5,
+    "total_price" : 1.15E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "118",
+    "hourly_price" : 0.0,
+    "daily_price" : 2.6450000000000003E-5,
+    "total_price" : 5.2900000000000005E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "124",
+    "hourly_price" : 0.0,
+    "daily_price" : 1.4380000000000001E-5,
+    "total_price" : 7.706999999999999E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "120",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.2937999999999998E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "126",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.373000000000001E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "86",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0013231200000000001,
+  "total_price" : 6.706240849999999,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "405",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0013,
+    "total_price" : 0.0039,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "259",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0013,
+  "total_price" : 19.864650000000005,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "492",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "470",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "470",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "322",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "unknown",
+    "id" : "87",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "55",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 4.5060000000000006E-5,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "420",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 6010.654560000003,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "425",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2348.00783,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "422",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1859.1637799999999,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "423",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 785.5847200000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "428",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 404.42787,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "420",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.1539,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "422",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.01731,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "423",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "425",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "427",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "420",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.02562,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "422",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "279",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 11622.332260000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "412",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 715.8851160000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "412",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.284631,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "266",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 2786.074286530001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "160",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 87.41957188999999,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "158",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 84.90418159,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "156",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 79.91859061000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "154",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 75.69701947000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "159",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 72.94664550000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "156",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.661000000000001E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "160",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 8.510000000000001E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "155",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.875E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "154",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.646E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "150",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.4380000000000001E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "102",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 2732.17099177,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "417",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1092.9853,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "430",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 786.64676,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "424",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 282.74402000000003,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "429",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 130.75531999999998,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "426",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 127.88008000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "426",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.012810000000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "417",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "424",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "429",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "430",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "429",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "276",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 2521.0699899999995,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "73",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1975.99883327,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "393",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 813.856,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "392",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.896,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "393",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "392",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "393",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.16,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "245",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1601.54931,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "171",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 29.767252689999985,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "175",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 29.758288549999996,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "179",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 29.740890709999995,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "173",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 29.738046889999993,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "177",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 29.697411229999993,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "170",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.6906E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "178",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.0339000000000001E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "172",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.0063000000000002E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "174",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.437999999999999E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "173",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 6.0950000000000004E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "104",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 959.0534939200005,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "68",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 760.9701013000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "194",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.939355290000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "193",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.7466167100000006,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "110",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 753.0936610300002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "254",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 712.1283000000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "186",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 91.9028379,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "187",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 13.749142650000003,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "186",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 4.314E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "107",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 629.7380948900005,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "196",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 6.557515390000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "195",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.18720823,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "111",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 524.6064252300002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "30",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 497.5222800000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "440",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 476.02140999999995,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "440",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "285",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 476.02140999999995,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "189",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 13.095045309999998,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "191",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.5049948100000012,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "189",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.7503E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "191",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.4030000000000001E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "109",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 455.2205899800001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "18",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 387.2970335100001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "230",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.87116876,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "247",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.864231350000003,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "241",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.861864339999999,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "238",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.859781850000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "232",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 4.835508640000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "248",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.4380000000000001E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "230",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.323E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "238",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.323E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "136",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 363.26608571,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "79",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 346.55157624,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "39",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 286.0666342100001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "166",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 7.276391640000003,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "165",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 7.025246209999998,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "164",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 6.76997758,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "163",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 6.400899709999996,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "162",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.3024163600000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "163",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 7.000000000000001E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "162",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.8760000000000002E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "103",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 154.96734345000007,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "90",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 79.05322926000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "99",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 69.36,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "266",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.9476024900000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "268",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.9455307600000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "264",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.9439421900000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "260",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.9318186599999998,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "253",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.93032425,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "253",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.8760000000000002E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "264",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.4380000000000001E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "268",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.4380000000000001E-5,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "138",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 49.38216715,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "160",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 43.296467150000005,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "62",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 39.60301427000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "486",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 18.882320000000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "488",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.39903,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "487",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 5.35775,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "489",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 4.0583,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "329",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 37.6974,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "139",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 37.61446898,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "250",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 32.4523838,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "video",
+    "id" : "196",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 26.476890300000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "196",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0410956,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "293",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 26.517985900000003,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "141",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 23.398169680000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "29",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 23.166438160000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "61",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 21.681,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "45",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 20.73185033,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "151",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 14.53878103,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "192",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 14.146649999999998,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "418",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 11.952270509999998,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "437",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.27899437,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "438",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.34165013000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "277",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 13.572915010000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "459",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 13.137801790000001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "459",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.25651858,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "300",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 13.394320370000003,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "58",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 12.952000000000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "249",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 12.532944830000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "152",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 12.4991055,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "164",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 12.462943650000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "184",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.28043161000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "183",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.27886382000000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "181",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.27271289000000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "185",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.27213267,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "180",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.27139186000000004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "181",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 2.1562000000000003E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "105",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 12.178151440000006,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "46",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 11.994668690000003,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "158",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 10.849708739999999,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "28",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 10.17,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "23",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 8.362,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "143",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 7.144833769999998,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "163",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 6.782804770000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "56",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 6.42870503,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "36",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 6.0013,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "127",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 5.7481271000000005,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "193",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 5.4735,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "100",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 5.40575,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "148",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 5.207403340000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "415",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 4.9266000000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "273",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 5.05437914,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "159",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 4.9397141300000005,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "149",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 4.54794805,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "130",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 4.4408772,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "145",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 4.387670899999999,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "84",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 3.903200000000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "441",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 3.7642196999999995,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "284",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 3.7642196999999995,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "unknown",
+    "id" : "343",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "182",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 3.56177,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "175",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 3.42809919,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "156",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 3.3926400000000005,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "183",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 3.0257400000000008,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "64",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 2.832,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "180",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.8180300000000003,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "181",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.8030400000000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "none",
+    "id" : "460",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.7481,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "302",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.7481,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "409",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.72,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "409",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "263",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.608,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "388",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 1.37972746,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "none",
+    "id" : "388",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0023400000000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "281",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.38206746,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "120",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.37805772,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "144",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.2276950800000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "108",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.05174015,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "224",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.9150200000000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "223",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.8761,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "57",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.648,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "173",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.6036900000000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "16",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.586,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "17",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.49655,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "75",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.474,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "187",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.4397485900000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "71",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.32720000000000005,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "153",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.29819023000000006,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "172",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.25855000000000006,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "53",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.22515000000000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "66",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.22320000000000004,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "443",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.168,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "286",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.168,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "video",
+    "id" : "191",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0192,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "video",
+    "id" : "190",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0032,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "video",
+    "id" : "192",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "268",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.10879999999999998,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "154",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.10547723,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "78",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.09691000000000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "50",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.07983280000000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "89",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.052,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "262",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.044071000000000006,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "27",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.035,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "video",
+    "id" : "193",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.018000000000000002,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "274",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.018000000000000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "42",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0174603,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "478",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0157,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "479",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 9.500000000000001E-4,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "480",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "481",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "313",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.016649999999999998,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "80",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0151,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "456",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0085,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "453",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "454",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "457",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.001,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "455",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "296",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0115,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "43",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.01,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "413",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0055000000000000005,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "269",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.009699999999999995,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "25",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.004,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "none",
+    "id" : "460",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.004,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "301",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.004,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "118",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0031773,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "none",
+    "id" : "218",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "121",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.003,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "126",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.003,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "174",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0022270000000000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "20",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0018181800000000002,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "129",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0010291200000000001,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "48",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 9.5361E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "197",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 8.0E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "134",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 7.000000000000001E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "195",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 6.0E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "72",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 5.0E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "207",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 5.0E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "208",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 5.0E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "196",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 4.0E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "194",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 3.0000000000000003E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "115",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.0E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "122",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.0E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "243",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 1.0E-4,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "81",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 5.0E-6,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "14",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "21",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "24",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "26",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "33",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "35",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "38",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "40",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "41",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "47",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "54",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "69",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "76",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "83",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "91",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "106",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "114",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "116",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "119",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "123",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "128",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "132",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "150",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "161",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "162",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "168",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "169",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "176",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "177",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "198",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "204",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "205",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "none",
+    "id" : "169",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "unknown",
+    "id" : "169",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "219",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "235",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "236",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "380",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "237",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "386",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "239",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "240",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "390",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "244",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "246",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "251",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "264",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "265",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "414",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  }, {
+    "adtype" : "banner",
+    "id" : "445",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "272",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "283",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "451",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "294",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "452",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "295",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "463",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "303",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "462",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "304",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "467",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "307",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "468",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "311",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ ],
+  "id" : "314",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+}, {
+  "creatives" : [ {
+    "adtype" : "banner",
+    "id" : "474",
+    "hourly_price" : 0.0,
+    "daily_price" : 0.0,
+    "total_price" : 0.0,
+    "delta" : {
+      "std" : "NaN",
+      "average" : "NaN"
+    }
+  } ],
+  "id" : "328",
+  "hourly_price" : 0.0,
+  "daily_price" : 0.0,
+  "total_price" : 0.0,
+  "delta" : {
+    "std" : "NaN",
+    "average" : "NaN"
+  }
+} ]

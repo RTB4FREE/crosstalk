@@ -1,0 +1,77 @@
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "query_string": {
+            "query": "*",
+            "analyze_wildcard": true
+          }
+        },
+        {
+          "range": {
+            "timestamp": {
+              "lte": _NOW_,
+              "format": "epoch_millis"
+            }
+          }
+        }
+      ],
+      "must_not": []
+    }
+  },
+  "_source": {
+    "excludes": []
+  },
+  "aggs": {
+    "campaignidagg": {
+      "terms": {
+        "field": "campaignId",
+        "size": 10000,
+        "order": {
+          "costagg": "desc"
+        }
+      },
+      "aggs": {
+        "costagg": {
+          "sum": {
+            "field": "cost"
+          }
+        },
+        "adtypeagg": {
+          "terms": {
+            "field": "adtype.keyword",
+            "size": 100,
+            "order": {
+              "costagg": "desc"
+            }
+          },
+          "aggs": {
+            "costagg": {
+              "sum": {
+                "field": "cost"
+              }
+            },
+            "creativeidagg": {
+              "terms": {
+                "field": "creative_id",
+                "size": 1000,
+                "order": {
+                  "costagg": "desc"
+                }
+              },
+              "aggs": {
+                "costagg": {
+                  "sum": {
+                    "field": "cost"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

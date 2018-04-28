@@ -1,0 +1,87 @@
+{
+	"size": 0,
+	"query": {
+		"bool": {
+			"must": [{
+					"query_string": {
+						"query": "type:wins",
+						"analyze_wildcard": true
+					}
+				},
+				{
+					"range": {
+						"@timestamp": {
+							"gte":_NOWMINUS_,
+							"lte":_NOW_,
+							"format": "epoch_millis"
+						}
+					}
+				}
+			],
+			"must_not": []
+		}
+	},
+	"_source": {
+		"excludes": []
+	},
+	"aggs": {
+		"dailyagg": {
+			"date_histogram": {
+				"field": "@timestamp",
+				"interval": "_INTERVAL_",
+				"time_zone": "UTC",
+				"min_doc_count": 1
+			},
+			"aggs": {
+				"campaignidagg": {
+					"terms": {
+						"field": "adId.keyword",
+						"size": 10000,
+						"order": {
+							"priceagg": "desc"
+						}
+					},
+					"aggs": {
+						"priceagg": {
+							"sum": {
+								"field": "price"
+							}
+						},
+						"adtypeagg": {
+							"terms": {
+								"field": "adtype.keyword",
+								"size": 5,
+								"order": {
+									"priceagg": "desc"
+								}
+							},
+							"aggs": {
+								"priceagg": {
+									"sum": {
+										"field": "price"
+									}
+								},
+								"creativeagg": {
+									"terms": {
+										"field": "cridId.keyword",
+										"size": 10000,
+										"order": {
+											"priceagg": "desc"
+										}
+									},
+									"aggs": {
+										"priceagg": {
+											"sum": {
+												"field": "price"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
