@@ -27,7 +27,7 @@ COPY wait-for-it.sh /
 COPY tools/* /
 COPY libs/* /libs
 COPY shell/* /shell/
-COPY config/docker.json config.json
+COPY config.json config.json
 COPY python/* /python/
 
 EXPOSE 8100 7002
