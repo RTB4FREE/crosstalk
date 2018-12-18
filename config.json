@@ -1,28 +1,24 @@
- {
-    "rtbName": "crosstalk",
-    "password": "iamspartacus",
-    "region": "$REGION",
-     "zeromq": {
-		  "status": "kafka://[$BROKERLIST]&topic=status",
-          "commands": "tcp://$PUBSUB:6000&commands",
-          "responses": "tcp://$PUBSUB:6001&responses",
-          "xfrport": "6002"
-     },
-
- 	"elk": {
- 		"XsimFile": "simdata/debug.sim",
-
-		"host": "54.154.34.75",
-		"agghost": "54.164.51.156",
-
-    	"port": 9200
-    }, 	
-	"mysql": {
-		"login": "$JDBC"
-	},
-	"app": {
-    	"port": "$CONTROL",
-		"uuid": "crosstalk"
-	}
+{
+  "rtbName": "crosstalk",
+  "password": "iamspartacus",
+  "region": "$REGION",
+  "zeromq": {
+    "status": "kafka://[$BROKERLIST]&topic=status",
+    "commands": "tcp://$PUBSUB:6000&commands",
+    "responses": "tcp://$PUBSUB:6001&responses",
+    "xfrport": "6002"
+  },
+  "elk": {
+    "XsimFile": "simdata/debug.sim",
+    "host": "$GHOST",
+    "agghost": "$AHOST",
+    "port": 80
+  },
+  "mysql": {
+    "login": "$JDBC"
+  },
+  "app": {
+    "port": "$CONTROL",
+    "uuid": "crosstalk"
+  }
 }
-	

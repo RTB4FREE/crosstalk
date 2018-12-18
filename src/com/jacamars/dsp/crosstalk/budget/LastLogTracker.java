@@ -31,7 +31,7 @@ public class LastLogTracker {
 
 	/** The last log query */
 	static final String LASTLOG = "query/lastlog.json";
-	
+
 	/** The calendar used by the class */
 	Calendar cal = Calendar.getInstance();
 	/** The simple date formatter */
@@ -53,7 +53,7 @@ public class LastLogTracker {
 	long time;
 	/** The lag in milliseconds of the last log */
 	long deltaTime;
-	
+
 	/**
 	 * Find the last log entry in ELK.
 	 * @param host String. The hostname of the ELK.
@@ -64,7 +64,7 @@ public class LastLogTracker {
 		restClient = RestClient.builder(new HttpHost(host, port, "http")).build();
 		contents = new String(Files.readAllBytes(Paths.get(LASTLOG)), StandardCharsets.UTF_8);
 	}
-	
+
 	/**
 	 * Query the Last log. Watch out, rolling over a day might mean no index for the day is available.
 	 * @return long. The lag in milliseconds in the log.
@@ -72,7 +72,7 @@ public class LastLogTracker {
 	 */
 	public long query() throws Exception {
 		cal.setTimeInMillis(System.currentTimeMillis());
-		String index  = "wins-" + format1.format(cal.getTime());
+		String index  = "/wins-" + format1.format(cal.getTime());
 		String data = contents;
 		HttpEntity entity = new NStringEntity(data, ContentType.APPLICATION_JSON);
 		Response indexResponse = null;
@@ -83,7 +83,7 @@ public class LastLogTracker {
 			if (error.toString().contains("404")) {
 				cal = Calendar.getInstance();
 			    cal.add(Calendar.DATE, -1);
-				index  = "wins-" + format1.format(cal.getTime());
+				index  = "/wins-" + format1.format(cal.getTime());
 				entity = new NStringEntity(data, ContentType.APPLICATION_JSON);
 				indexResponse = restClient.performRequest("GET", index + "/_search",Collections.<String, String>emptyMap(), entity);
 			}
@@ -101,7 +101,7 @@ public class LastLogTracker {
 		deltaTime = System.currentTimeMillis() - time;
 		return time;
 	}
-	
+
 	/**
 	 * Returns the last delta time for the logging.
 	 * @return long. The lag in milliseconds.
@@ -109,7 +109,7 @@ public class LastLogTracker {
 	public long deltaTime() {
 		return deltaTime;
 	}
-	
+
 	/**
 	 * Close the log.
 	 * @throws Exception on network errors.
@@ -122,7 +122,7 @@ public class LastLogTracker {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
 	 * A simple tester.
 	 * @param args String[]. Arguments.
@@ -132,7 +132,7 @@ public class LastLogTracker {
 		String host = "54.164.51.156";
 		if (args.length > 0)
 			host = args[0];
-		
+
 		LastLogTracker log = new LastLogTracker(host,9200);
 		log.query();
 		System.out.println(log.deltaTime());
