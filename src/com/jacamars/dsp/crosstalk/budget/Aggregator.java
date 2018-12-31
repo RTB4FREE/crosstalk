@@ -219,7 +219,7 @@ public class Aggregator {
 		Response indexResponse = null;
 
 		try {
-			indexResponse = restClient.performRequest("GET", index + "/_search",
+			indexResponse = restClient.performRequest("GET", "/" + index + "/_search",
 				Collections.<String, String>emptyMap(), entity);
 		} catch (Exception e) {
 			// e.printStackTrace();

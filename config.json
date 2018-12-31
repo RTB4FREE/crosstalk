@@ -12,7 +12,7 @@
     "XsimFile": "simdata/debug.sim",
     "host": "$GHOST",
     "agghost": "$AHOST",
-    "port": 80
+    "port": "$PORT"
   },
   "mysql": {
     "login": "$JDBC"
