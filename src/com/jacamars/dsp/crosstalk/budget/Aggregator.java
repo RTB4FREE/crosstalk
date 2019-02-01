@@ -187,20 +187,22 @@ public class Aggregator {
 		final Map map;
 		String data = content;
 		Long now = Instant.now().toEpochMilli();
-		String index = "/wins-*";
+		String index = "wins-*";
 
 		switch (mode) {
 		case DAILY:
 			data = data.replaceAll("_NOW_", now.toString());
-			now -= (24 * 60 * 60 * 1000);
-			data = data.replaceAll("_NOWMINUS_", now.toString());
+			Long startDaily = now - (24 * 60 * 60 * 1000);
+			data = data.replaceAll("_NOWMINUS_", startDaily.toString());
 			data = data.replaceAll("_INTERVAL_", "1d");
+			logger.info("Daily aggregation, from: " + startDaily.toString() + " to: " + now.toString());
 			break;
 		case HOURLY:
 			data = data.replaceAll("_NOW_", now.toString());
-			now -= (60 * 60 * 1000);
-			data = data.replaceAll("_NOWMINUS_", now.toString());
+			Long startHourly = now - (60 * 60 * 1000);
+			data = data.replaceAll("_NOWMINUS_", startHourly.toString());
 			data = data.replaceAll("_INTERVAL_", "1h");
+			logger.info("Hourly aggregation, from: " + startHourly.toString() + " to: " + now.toString());
 			break;
 		default:
 			/*
@@ -211,8 +213,11 @@ public class Aggregator {
 	       calendar.set(Calendar.MINUTE, 0);
 	       calendar.set(Calendar.SECOND, 0);
 	       calendar.set(Calendar.MILLISECOND, 0);
-		   data = data.replaceAll("_NOW_", Long.toString(calendar.getTime().getTime()));
-		   index = "/bidagg-*";
+				 String nowTime = Long.toString(calendar.getTime().getTime());
+				 logger.info("Total aggregation, from: " + nowTime);
+
+		   data = data.replaceAll("_NOW_", nowTime);
+		   index = "bidagg-*";
 		}
 
 		HttpEntity entity = new NStringEntity(data, ContentType.APPLICATION_JSON);
