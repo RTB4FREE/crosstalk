@@ -46,6 +46,7 @@ services:
       - MYSQL_DATABASE=rtb4free
       - MYSQL_USER=ben
       - MYSQL_PASSWORD=test
+      
   web:
     image: ploh/rtbadmin_open
     command: bash -c "./wait_for_it.sh db:3306 --t120; bundle exec rails s -p 3000 -b '0.0.0.0'"
