@@ -55,27 +55,27 @@ public enum Configuration {
 
 	/** Configuration object for the application */
 	public Config config;
-	
+
 	/** The jackson json parser object */
-	
+
 	static ObjectMapper mapper = new ObjectMapper();
-	
+
 	/** Redisson configuration object */
 	public RedissonClient redisson;
 
 	/** Win response object */
 	RTopic winners;
-	
+
 	/** Command response object */
 	RTopic responses;
 
 
 	/** 0MQ topic for requests */
 	RTopic requests;
-	
+
 	/** 0MQ topic for clicks and pixels */
 	RTopic clicks;
-	
+
 	/** 0MQ topic for bids */
 	RTopic bids;
 
@@ -97,30 +97,30 @@ public enum Configuration {
 
 	/** The MySQL connection */
 	Connection connect = null;
-	
+
 	/* An SQL statement object */
 	Statement statement = null;
-	
+
 	/** This class's sl4j logger object */
 	static final Logger logger = LoggerFactory.getLogger(Configuration.class);
 
 	public volatile DeadmanSwitch deadmanSwitch;
 	/** The deadman switch key in Aerospike */
 	public String deadmanKey = "accountingsystem";
-	
+
 	/** If specified, only these campaigns may receive api calls */
 	public static final Set<String> apiAcl = new HashSet();
 
-	/** 
-	 * Return the instance of the configuration, after it was iniitalized 
-	 * @return Configuration. The instance that was configured 
+	/**
+	 * Return the instance of the configuration, after it was iniitalized
+	 * @return Configuration. The instance that was configured
 	 */
 	public static Configuration getInstance() {
 		return CROSSTALK;
 	}
 
-	/** 
-	 * Connect to SQL. 
+	/**
+	 * Connect to SQL.
 	 * @throws Exception on network or SQL access errros
 	 */
 	public void connectToSql() throws Exception {
@@ -171,7 +171,7 @@ public enum Configuration {
 	 */
 	static long zulu = 0;
 
-	
+
 	public void initialize(String in, ScannerIF commandResponses, ScannerIF wins) throws Exception {
 		String content = new String(Files.readAllBytes(Paths.get(in)));
 		mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
@@ -188,10 +188,10 @@ public enum Configuration {
 		Scanner.budgets = null;
 		if (config.elk.simFile != null)
 			Scanner.budgets = BudgetController.getInstance(config.elk.simFile);
-		else 
-			Scanner.budgets = BudgetController.getInstance(config.elk.getHost(),config.elk.getAggHost(),config.elk.port);
-		
-		int k = 0; 
+		else
+			Scanner.budgets = BudgetController.getInstance(config.elk.getHost(),config.elk.getAggHost(),config.elk.getPort());
+
+		int k = 0;
 		while(k < 10 && Scanner.budgets.getRevolution() == 0) {
 			Thread.sleep(1000);
 		}
@@ -277,7 +277,7 @@ public enum Configuration {
 		});
 
 		new WebAccess(config.app.getPort());
-		
+
 		if (config.app.apiAcl != null) {
 			apiAcl.addAll(config.app.apiAcl);
 		}
@@ -407,7 +407,7 @@ public enum Configuration {
         }
 		if (to.equals(""))
 			to = "*";
-		
+
 		cmd.timestamp = System.currentTimeMillis();
 		String name = "" + cmd.cmd;
 
@@ -445,7 +445,7 @@ public enum Configuration {
 		}
 		if (list.length()==0)
 			return camps;
-		
+
 		list = list.substring(0,list.length()-1);
 		AddCampaignsList cmd = new AddCampaignsList(name, list);
 		sendCommand(true,cmd);
@@ -456,7 +456,7 @@ public enum Configuration {
 	public App getApp() {
 		return config.app;
 	}
-	
+
 	@JsonIgnore
 	public Elk getElk() {
 		return config.elk;

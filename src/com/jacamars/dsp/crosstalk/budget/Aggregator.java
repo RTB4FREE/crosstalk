@@ -35,31 +35,31 @@ import com.jacamars.dsp.crosstalk.tools.InternalHashMap;
  *
  */
 public class Aggregator {
-	
+
 	/** Location of the daily file query */
 	static final String DAILY_FILE = "query/daily.json";
-	
+
 	/** The total file querry */
 	static final String TOTAL_FILE = "query/total.json";
 
 	/** Global accumulator */
 	static Campaign global = new Campaign("global");
-	
+
 	/** Indicates hourly aggregation */
 	public static final int HOURLY = 0;
-	
+
 	/** Indicates daily aggregation */
 	public static final int DAILY = 1;
-	
+
 	/** Indicates total cost aggregation */
 	public static final int TOTAL = 2;
 
 	/** How many hours past 0 hour */
 	public static volatile double hoursPastZero = 0;
-	
+
 	/** How many minutes since last hour */
 	public static volatile double minutesPastZero = 0;
-	
+
 	/** Which mode is this aggrgegator */
 	final int mode;
 
@@ -68,18 +68,18 @@ public class Aggregator {
 
 	/** Holds the contents of the template query */
 	final String content;
-	
+
 	/** Tracks network latency on the calls to ELK */
 	int latency;
-	
+
 	/** The ELK rest client */
 	private RestClient restClient;
-	
+
 	/** A map that holds the returned value from ELK */
 	Map map;
-	
+
 	long revolution = 0;
-	
+
 	static final Logger logger = LoggerFactory.getLogger(Aggregator.class);
 
 	/** A handy JSON object for pretty printing */
@@ -104,19 +104,19 @@ public class Aggregator {
 		Map m = hourly.getMap();
 		String content = mapper.writer().withDefaultPrettyPrinter().writeValueAsString(hourly.campaigns);
 		Files.write(Paths.get("hourly.sim"), content.getBytes());
-		
+
 		Aggregator daily = new Aggregator(DAILY, host, port);
 		daily.query();
 		m = daily.getMap();
 		content = mapper.writer().withDefaultPrettyPrinter().writeValueAsString(daily.campaigns);
 		Files.write(Paths.get("daily.sim"), content.getBytes());
-		
+
 		Aggregator total = new Aggregator(TOTAL, host, port);
 		total.query();
 		total.getMap();
 		content = mapper.writer().withDefaultPrettyPrinter().writeValueAsString(hourly.campaigns);
 		Files.write(Paths.get("total.sim"), content.getBytes());
-		
+
 		int k = 1;
 		while (true) {
 			hourly.query();
@@ -126,7 +126,7 @@ public class Aggregator {
 			Aggregator.dump();
 			Thread.sleep(60000);
 			logger.debug("Revolution: {}",k++);
-		}  
+		}
 	}
 
 	/**
@@ -183,7 +183,7 @@ public class Aggregator {
 		minutesPastZero = calendar.get(Calendar.MINUTE);
 		minutesPastZero += (double)calendar.get(Calendar.SECOND)/60.0;
 		hoursPastZero += minutesPastZero/60;
-		
+
 		final Map map;
 		String data = content;
 		Long now = Instant.now().toEpochMilli();
@@ -192,15 +192,17 @@ public class Aggregator {
 		switch (mode) {
 		case DAILY:
 			data = data.replaceAll("_NOW_", now.toString());
-			now -= (24 * 60 * 60 * 1000);
-			data = data.replaceAll("_NOWMINUS_", now.toString());
+			Long startDaily = now - (24 * 60 * 60 * 1000);
+			data = data.replaceAll("_NOWMINUS_", startDaily.toString());
 			data = data.replaceAll("_INTERVAL_", "1d");
+			logger.info("Daily aggregation, from: " + startDaily.toString() + " to: " + now.toString());
 			break;
 		case HOURLY:
 			data = data.replaceAll("_NOW_", now.toString());
-			now -= (60 * 60 * 1000);
-			data = data.replaceAll("_NOWMINUS_", now.toString());
+			Long startHourly = now - (60 * 60 * 1000);
+			data = data.replaceAll("_NOWMINUS_", startHourly.toString());
 			data = data.replaceAll("_INTERVAL_", "1h");
+			logger.info("Hourly aggregation, from: " + startHourly.toString() + " to: " + now.toString());
 			break;
 		default:
 			/*
@@ -208,18 +210,21 @@ public class Aggregator {
 			 */
 
 	       calendar.set(Calendar.HOUR_OF_DAY, 0);
-	       calendar.set(Calendar.MINUTE, 0);  
-	       calendar.set(Calendar.SECOND, 0);  
+	       calendar.set(Calendar.MINUTE, 0);
+	       calendar.set(Calendar.SECOND, 0);
 	       calendar.set(Calendar.MILLISECOND, 0);
-		   data = data.replaceAll("_NOW_", Long.toString(calendar.getTime().getTime()));
+				 String nowTime = Long.toString(calendar.getTime().getTime());
+				 logger.info("Total aggregation, from: " + nowTime);
+
+		   data = data.replaceAll("_NOW_", nowTime);
 		   index = "bidagg-*";
 		}
 
 		HttpEntity entity = new NStringEntity(data, ContentType.APPLICATION_JSON);
 		Response indexResponse = null;
-		
+
 		try {
-			indexResponse = restClient.performRequest("GET", index + "/_search",
+			indexResponse = restClient.performRequest("GET", "/" + index + "/_search",
 				Collections.<String, String>emptyMap(), entity);
 		} catch (Exception e) {
 			// e.printStackTrace();
@@ -231,7 +236,7 @@ public class Aggregator {
 			doTotal(indexResponse);
 		else
 			doDailyHourly(indexResponse);
-		
+
 		revolution++;
 
 	}
@@ -248,7 +253,7 @@ public class Aggregator {
 		data = EntityUtils.toString(indexResponse.getEntity());
 		handleTotalData(data);
 	}
-		
+
 	/**
 	 * The data handler for total data aggrgeations. This is split from doTotal() so that
 	 * we can easily use simulated data.
@@ -256,7 +261,7 @@ public class Aggregator {
 	 * @throws Exception on JSON errors.
 	 */
 	void handleTotalData(String data)throws Exception {
-			
+
 		map = mapper.readValue(data, Map.class);
 		data = mapper.writer().withDefaultPrettyPrinter().writeValueAsString(map);
 
@@ -266,12 +271,12 @@ public class Aggregator {
 			throw new Exception("Timed out");
 
 		Map x = (Map) map.get("aggregations");
-		
+
 		if (x == null) {
 			logger.error("*** ELK TEST: Total aggregations are not avialble!");
 			return;
 		}
-		
+
 		x = (Map) x.get("campaignidagg");
 		List<Map> buckets = (List) x.get("buckets");
 		double total = 0;
@@ -306,10 +311,10 @@ public class Aggregator {
 		logger.debug("IndexResponse: {}", indexResponse);
 
 		data = EntityUtils.toString(indexResponse.getEntity());
-		
+
 		doDailyHourly(data);
 	}
-	
+
 	/**
 	 * Handle the daily hourly data. This is split from doDailyHourly so we can use simulated days.
 	 * @param data String. The data to process.
@@ -331,12 +336,12 @@ public class Aggregator {
         }
 		x = (Map) x.get("dailyagg");
 		List<Map> buckets = (List) x.get("buckets");
-		
+
 		//if (buckets.size()!=2) {
 		//	logger.error("DID NOT GWT 2 BUCKETS ON HOURLY/DAILY {}",data);
 		//	return;
 		//}
-		
+
 		int pos = buckets.size();
 		if (pos == 0) {
 			logger.warn("DID NOT GET ANY BUCKETS ON HOURLY/DAILY {}",data);
@@ -362,7 +367,7 @@ public class Aggregator {
 			x = (Map) x.get("priceagg");
 			double price = (Double) x.get("value");
 			price /= 1000;
-			
+
 			Campaign c = get(campaignid);
 			if (c == null) {
 				c = new Campaign(campaignid);
@@ -415,7 +420,7 @@ public class Aggregator {
 			break;
 		}
 	}
-	
+
 	/**
 	 * Parses the results of aggregation and puts it into the campaign.
 	 * @param c Campaign. The object representing the campaign.
@@ -448,7 +453,7 @@ public class Aggregator {
 		}
 	}
 
-	/** 
+	/**
 	 * Handle the creatives in a campaign, from the results of the aggregation.
 	 * @param c Campaign. The object representing the campaign.
 	 * @param cr Map. The aggregations of all the creatives in the campaign.
@@ -527,7 +532,7 @@ public class Aggregator {
 		Campaign c = get(id);
 		return c.creatives;
 	}
-	
+
 	/**
 	 * Return whether the specified campaign/creative/type exists.
 	 * @param campaign String. The campaign id to search for.
@@ -539,13 +544,13 @@ public class Aggregator {
 		Campaign c = get(campaign);
 		if (c == null)
 			return false;
-		
+
 		Creative cr = c.getCreative(campaign, type);
 		if (cr == null)
 			return false;
 		return true;
 	}
-	
+
 	/**
 	 * Patch the totals in the aggregations with the appropriate daily_price. Use this when
 	 * total aggregations is at 0 hour instead of the default, which is 5 minutes old.
@@ -557,7 +562,7 @@ public class Aggregator {
 			entry.patchTotals();
 		}
 	}
-	
+
 	/**
 	 * Update the global counter. Make sure you call this after pa
 	 */
@@ -565,7 +570,7 @@ public class Aggregator {
 		global.setTotal_price(0);
 		global.setDaily_price(0);
 		global.setHourly_price(0);
-		
+
 		int i = 0;
 		Object x = null;
 		while((x=campaigns.getNext(i++)) != null) {
@@ -579,9 +584,9 @@ public class Aggregator {
 			d = global.getHourly_price();
 			global.setHourly_price(d + entry.getHourly_price());
 		}
-		
 
-		
+
+
 		global.delta.add(global.getHourly_price());
 	}
 
@@ -590,30 +595,30 @@ public class Aggregator {
 	 */
 	public static void dump() {
 		logger.info("********************************************");
-		
+
 		for (int i=0;i<campaigns.size();i++) {
 			Campaign c = campaigns.getNext(i++);
 
 			//if (c.delta != 0) {
 				logger.info("{}, total: {}, daily: {}. hourly: {}, delta: {}",c.id,
 						c.getTotal_price(),c.getDaily_price(),c.getHourly_price(),c.delta.getAverage());
-				
+
 				double hourly = c.delta.getAverage() * 60;
 				double daily = c.delta.getAverage() * 3600;
 				logger.info("Predict: Daily: {}, Hourly: {}",daily, hourly);
-				
+
 				for (Creative cc : c.creatives) {
 			//		if (cc.delta != 0) {
 						logger.info("{}/{}/{}, Total: {}, Daily: {}, Hourly: {}, Delta: {}", c.id,cc.id,cc.adtype,cc.total_price,
 							cc.daily_price,cc.hourly_price,cc.delta.getAverage());
 				//	}
 				}
-				
-			//} 
+
+			//}
 		}
 		logger.info("********************************************");
 	}
-	
+
 	/**
 	 * Pretty print dump all the campaigns and creatives.
 	 */
@@ -624,23 +629,23 @@ public class Aggregator {
 			if (c.getHourly_price() != 0) {
 				logger.info("{}, total: {}, daily: {}. hourly: {}, delta: {}",c.id,
 						c.getTotal_price(),c.getDaily_price(),c.getHourly_price(),c.delta.getAverage());
-				
+
 				double hourly = c.delta.getAverage() * 60;
 				double daily = c.delta.getAverage() * 3600;
 				logger.info("Predict: Daily: {}, Hourly: {}",daily, hourly);
-				
+
 				for (Creative cc : c.creatives) {
 					if (cc.hourly_price != 0) {
 						logger.info("{}/{}/{}, Total: {}, Daily: {}, Hourly: {}, Delta: {}", c.id,cc.id,cc.adtype,cc.total_price,
 							cc.daily_price,cc.hourly_price,cc.delta.getAverage());
 					}
 				}
-				
-			} 
+
+			}
 		}
 		logger.info("********************************************");
 	}
-	
+
 	/**
 	 * Dump the indicated campaign to stdout.
 	 * @param who String. The campaign to dump.
@@ -652,19 +657,19 @@ public class Aggregator {
 			if (c.id.equals(who)) {
 				logger.info("{}, Total: {}, Hourly: {}, Daily: {}, delta: {}",
 						c.id,c.getTotal_price(),c.getDaily_price(),c.getHourly_price(),c.delta.getAverage());
-				
+
 				double hourly = c.delta .getAverage() * 60;
 				double daily = c.delta.getAverage() * 3600;
 				logger.info("Predict, Daily: {}, Hourly: {}",daily, hourly);
-				
+
 				for (Creative cc : c.creatives) {
 					//if (cc.id.equals("420")) {
 						logger.info("{}/{}/{}, Total: {}, Daily: {}, Hourly: {}, Delta: {}",who,cc.id,cc.adtype,cc.total_price,
 								cc.daily_price,cc.hourly_price,c.delta.getAverage());
 					//}
 				}
-				
-			} 
+
+			}
 		}
 		logger.info("********************************************");
 	}
@@ -687,22 +692,22 @@ class Campaign {
 
 	/** The creatives of this campaign */
 	public List<Creative> creatives = new ArrayList<Creative>();
-	
+
 	/** Campaign id */
 	public String id;
-	
+
 	/** The hourly cost incurred since the last hour mark */
 	private volatile double hourly_price;
 	private boolean setHourly = false;
-	
+
 	/** The daily cost incurred since the last day mark */
 	private volatile double daily_price;
 	private boolean setDaily = false;
-	
+
 	/** The total price since campaign creation */
 	private volatile double total_price;
 	private boolean setTotal = false;
-	
+
 	/** price incurred per minute */
 	MovingAverage delta = new MovingAverage(10);
 
@@ -713,12 +718,12 @@ class Campaign {
 	public Campaign(String id) {
 		this.id = id;
 	}
-	
+
 	/**
 	 * Constructor for JSON
 	 */
 	public Campaign() {
-		
+
 	}
 
 	/**
@@ -734,8 +739,8 @@ class Campaign {
 		}
 		return null;
 	}
-	
-	/** 
+
+	/**
 	 * Patch the total_price by adding in the daily_price. Use this when total aggregations are at the
 	 * 0 hour mark of the day. Using the standard aggregation causes a delay of 5 minutes otherwise.
 	 * Note, this also will reset hourly and daily cost to 0 if there were no aggregations
@@ -745,7 +750,7 @@ class Campaign {
 			setTotal = true;
 			total_price = 0;
 		}
-		
+
 		total_price += daily_price;
 		for (int i=0;i<creatives.size();i++) {
 			Creative c = creatives.get(i);
@@ -847,19 +852,19 @@ class Campaign {
 class Creative {
 	/** Ad type as in 'banner' or 'video' */
 	volatile public String adtype;
-	
+
 	/** The creative id */
 	public String id;
-	
+
 	/** The hourly cost since the last hour */
 	volatile public double hourly_price;
-	
+
 	/** The daily cost, since midnight */
 	volatile public double daily_price;
-	
+
 	/** The total price, if not patched, is total cost as of 5 mins ago */
 	volatile public double total_price;
-	
+
 	/** Rate of spend over last minute */
 	public MovingAverage delta = new MovingAverage(60);
 
@@ -872,14 +877,14 @@ class Creative {
 		this.adtype = adtype;
 		this.id = id;
 	}
-	
+
 	/**
 	 * Constructor for JSON to use.
 	 */
 	public Creative() {
-		
+
 	}
-	
+
 	/**
 	 * Patch the total by adding in the daily_price. Use this when aggregations of the total
 	 * are at zero hour instead of the default (which is 5 minutes old
@@ -888,4 +893,3 @@ class Creative {
 		total_price += daily_price;
 	}
 }
-

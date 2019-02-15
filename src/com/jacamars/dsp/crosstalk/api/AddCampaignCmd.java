@@ -22,7 +22,7 @@ public class AddCampaignCmd extends ApiCommand {
 
 	/**
 	 * Deletes a campaign from the bidders.
-	 * 
+	 *
 	 * @param username
 	 *            String. User authorization for command.
 	 * @param password
@@ -35,7 +35,7 @@ public class AddCampaignCmd extends ApiCommand {
 
 	/**
 	 * Targeted form of command. starts a specific bidder.
-	 * 
+	 *
 	 * @param username
 	 *            String. User authorizatiom.
 	 * @param password
@@ -69,6 +69,6 @@ public class AddCampaignCmd extends ApiCommand {
 				error = true;
 				message = err.toString();
 			}
-			message = "Timed out";
+//			message = "Timed out";
 		}
 }
