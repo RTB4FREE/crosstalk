@@ -178,13 +178,12 @@ public enum Configuration {
 		config = mapper.readValue(content, Config.class);
 
 		config.fixRegion();
-		config.fixPassword();
 
 		if (commandResponses == null || wins == null)
 			return;
 
 		logger.info("REGION is set to {}",config.region);
-		logger.info("Global ELK is set to {}, Regional ELK is set to {}",config.elk.getAggHost(),config.elk.getHost());
+		logger.info("Global ELK is set to {}, Regional ELK is set to {}, port: {}",config.elk.getAggHost(),config.elk.getHost(), config.elk.getPort());
 
 		Scanner.budgets = null;
 		if (config.elk.simFile != null)
