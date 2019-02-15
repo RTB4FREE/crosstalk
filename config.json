@@ -1,6 +1,6 @@
 {
   "rtbName": "crosstalk",
-  "password": "iamspartacus",
+  "password": "$PASSWORD",
   "region": "$REGION",
   "zeromq": {
     "status": "kafka://[$BROKERLIST]&topic=status",
@@ -12,7 +12,7 @@
     "XsimFile": "simdata/debug.sim",
     "host": "$GHOST",
     "agghost": "$AHOST",
-    "port": "$PORT"
+    "port": "$ESPORT"
   },
   "mysql": {
     "login": "$JDBC"
