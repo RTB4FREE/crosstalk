@@ -80,14 +80,12 @@ If you want to modify the code.
    
 5. If you need to push to the repo:
 
-   $docker push jacamars/crosstalk
+   $docker push jacamars/crosstalk:test
    
 Changing Operational Parameters
 -------------------------------------
 Crosstalk uses a container based file in config.json. If you need to change the parameters within it
-do it in your own copy and use volumes command to mount into it. Example, suppose you made your own copy of 
-config.json and modified it and you called it ./myconfig.json. You modify the bidder services section in 
-docker-compose.yml to mount. Note the volumes directive:
+do it in your own copy and use volumes command to mount into it. Example, suppose you made your own copy of  config.json and modified it and you called it ./myconfig.json. You modify the bidder services section in docker-compose.yml to mount. Note the volumes directive:
 
   crosstalk:
     image: "jacamars/crosstalk"
@@ -95,8 +93,10 @@ docker-compose.yml to mount. Note the volumes directive:
       - "8200:8200"
     environment:
       REGION: "AP"
-      GHOST: "$GHOST"
-      AHOST: "$AHOST"
+      PASSWORD: "iamspartacus"
+      GHOST: "192.92.68.11"
+      AHOST: "192.92.68.10"
+      ESPORT: "9200"
       BROKERLIST: "kafka:9092"
       PUBSUB: "zerospike"
       CONTROL: "8100"
