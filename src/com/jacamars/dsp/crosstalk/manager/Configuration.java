@@ -178,6 +178,7 @@ public enum Configuration {
 		config = mapper.readValue(content, Config.class);
 
 		config.fixRegion();
+		config.fixPassword();
 
 		if (commandResponses == null || wins == null)
 			return;

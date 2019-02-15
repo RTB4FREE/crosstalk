@@ -44,4 +44,13 @@ public class Config {
 			region = System.getenv(name);
 		}
 	}
+	
+	public void fixPassword() {
+		if (password.startsWith("$")) {
+			String name = password.substring(1);
+			password = System.getenv(name);
+		} 
+		if (password == null)
+			password = "iamspartacus";
+	}
 }
