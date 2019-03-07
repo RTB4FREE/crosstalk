@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# This runs the Crosstalk server
+#
+java -agentpath:/usr/local/YourKit-JavaProfiler-2019.1/bin/linux-x86-64/libyjpagent.so=port=10001,listen=all \
+	-Dlog4j.configuration="file:log4j.properties" \
+	-cp target/Crosstalk-0.0.1-SNAPSHOT-jar-with-dependencies.jar:libs/Bidder-0.0.1-SNAPSHOT.jar com.jacamars.dsp.crosstalk.manager.Crosstalk $1 $2 $3 $4
+ 
