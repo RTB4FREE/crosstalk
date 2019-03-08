@@ -344,6 +344,7 @@ public enum Configuration {
 			logger.warn("Patching in missing campaign: {}",cid);
 			AccountingCampaign campaign = Scanner.getActiveCampaign(cid);
 			try {
+				campaign.updateSpike();
 				campaign.addToRTB();
 				Thread.sleep(1000);
 			} catch (Exception error) {
