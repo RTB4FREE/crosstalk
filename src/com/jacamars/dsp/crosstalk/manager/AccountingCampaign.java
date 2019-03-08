@@ -689,6 +689,28 @@ public class AccountingCampaign {
 
 		return true;
 	}
+	
+	/**
+	 * Patch the campaign back into campaigns, in case zerospike is missing it.
+	 * @throws Exception on shared access errors
+	 */
+	public void patchin() throws Exception {
+		Configuration config = Configuration.getInstance();
+		List<Campaign> campaigns = config.shared.getCampaigns();
+
+		for (int i = 0; i < campaigns.size(); i++) {
+			Campaign x = campaigns.get(i);
+			if (x.adId.equals(campaign.adId)) {
+				campaigns.remove(i);
+				break;
+			}
+		}
+
+		campaigns.add(campaign);
+		Scanner.campaigns.add(this);
+
+		Configuration.getInstance().shared.putCampaigns(campaigns);
+	}
 
 	/**
 	 * Check and see if this campaign is deletable fron the system
