@@ -491,8 +491,9 @@ public class Scanner implements Runnable, ScannerIF {
 				}
 			} else {
 				logger.info("New campaign is inactive {}, reason: {}", campaign, c.report());
-				campaigns.remove(c);
-				deletedCampaigns.put(campaign, c);
+				//campaigns.remove(c);
+				//deletedCampaigns.put(campaign, c);
+				delete(campaign);
 			}
 			// handleLucene(c);
 			// Deleted campaign
