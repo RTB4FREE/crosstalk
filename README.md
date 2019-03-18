@@ -76,11 +76,11 @@ If you want to modify the code.
    
 4. Make the docker images locally (note change your repo from jacamars to your repo):
 
-   $docker build -t jacamars/crosstalk:v1 -f Docker.crosstalk .
+   $docker build -t jacamars/crosstalk:pd -f Docker.crosstalk .
    
 5. If you need to push to the repo:
 
-   $docker push jacamars/crosstalk:v1
+   $docker push jacamars/crosstalk:pd
    
 Changing Operational Parameters
 -------------------------------------

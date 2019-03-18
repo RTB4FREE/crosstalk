@@ -32,6 +32,10 @@ public class Elk {
 		}
 
 		if (port.startsWith("$")) {
+			String test = System.getenv(port.substring(1));
+			if (test == null)
+				return 9200;
+			
 			return Integer.parseInt(System.getenv(port.substring(1)));
 		}
 		else return Integer.parseInt(port);
