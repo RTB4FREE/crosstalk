@@ -82,7 +82,7 @@ public enum BudgetController {
 		BudgetController.hourly = new Aggregator(Aggregator.HOURLY, host1, port);
 		BudgetController.daily = new Aggregator(Aggregator.DAILY, host1, port);
 		BudgetController.total = new Aggregator(Aggregator.TOTAL, host2, port);
-		BudgetController.lastLog = new LastLogTracker(host1, port);
+		// BudgetController.lastLog = new LastLogTracker(host1, port);
 
 		ScheduledExecutorService execService = Executors.newScheduledThreadPool(1);
 		execService.scheduleAtFixedRate(() -> {
@@ -155,17 +155,20 @@ public enum BudgetController {
 	 *             on network errors.
 	 */
 	static void process() throws Exception {
-
+	
 		Aggregator.touchAll();
-
+		
 		try {
 			hourly.query();
 			daily.query();
 			total.query();
-			if (lastLog != null) // can be null in debug
-				lastLog.query();
-
+						
+			//if (lastLog != null) {      // can be null in debug 
+				// lastLog.query();     // THERE IS A BUG IN ES, DON"T CALL THIS FOR NOW.
+			//}
+			
 			Aggregator.patchTotals();
+			
 			Aggregator.updateGlobal();
 
 			predictor.setScale();
@@ -176,9 +179,6 @@ public enum BudgetController {
 		}
 
 		revolution++;
-
-		// dump("285");
-		// dumpAllActive();
 		logger.info("Latency: {}, revolution: {}", deltaTime(), revolution);
 	}
 
@@ -443,7 +443,7 @@ public enum BudgetController {
 		BudgetController.hourly.close();
 		BudgetController.daily.close();
 		BudgetController.total.close();
-		BudgetController.lastLog.close();
+	//	BudgetController.lastLog.close();
 	}
 
 	/**

@@ -53,6 +53,9 @@ public class LastLogTracker {
 	long time;
 	/** The lag in milliseconds of the last log */
 	long deltaTime;
+	
+	String host;
+	int port;
 
 	/**
 	 * Find the last log entry in ELK.
@@ -61,8 +64,11 @@ public class LastLogTracker {
 	 * @throws Exception on network errors.
 	 */
 	public LastLogTracker(String host, int port) throws Exception {
+		this.host = host;
+		this.port = port;
 		restClient = RestClient.builder(new HttpHost(host, port, "http")).build();
 		contents = new String(Files.readAllBytes(Paths.get(LASTLOG)), StandardCharsets.UTF_8);
+		restClient.close();
 	}
 
 	/**
@@ -90,6 +96,7 @@ public class LastLogTracker {
 			else
 				throw error;
 		}
+		
 		// System.out.println(data);
 		data = EntityUtils.toString(indexResponse.getEntity());
 		map = mapper.readValue(data, Map.class);
