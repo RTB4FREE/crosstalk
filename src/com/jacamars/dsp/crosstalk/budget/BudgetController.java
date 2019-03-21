@@ -162,8 +162,8 @@ public enum BudgetController {
 			hourly.query();
 			daily.query();
 			total.query();
-			if (lastLog != null) // can be null in debug
-				lastLog.query();
+			//if (lastLog != null) // can be null in debug
+			//	lastLog.query();
 
 			Aggregator.patchTotals();
 			Aggregator.updateGlobal();
