@@ -12,8 +12,8 @@
         {
           "range": {
             "@timestamp": {
-              "gte": 1497980455805,
-              "lte": 1497984055805,
+              "gte":_NOWMINUS_,
+			  "lte":_NOW_,
               "format": "epoch_millis"
             }
           }

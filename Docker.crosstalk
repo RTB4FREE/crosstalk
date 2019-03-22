@@ -20,6 +20,7 @@ RUN mkdir logs
 COPY log4j.properties /
 
 COPY query/daily.json    /query
+COPY query/hourly.json   /query
 COPY query/lastlog.json  /query
 COPY query/total.json   /query
 COPY target/*with-dependencies.jar /target

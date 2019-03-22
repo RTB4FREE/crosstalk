@@ -410,11 +410,11 @@ public class AccountingCampaign {
 			if (reason.length() != 0)
 				reason += " ";
 			if (Scanner.budgets.checkCampaignBudgetsTotal(""+campaignid, total_budget))
-				reason += "Campaign total budget exceeded. ";
+				reason += "Campaign total cost: " + cost.getDoubleValue() + " exceeds: " + total_budget.getDoubleValue() + ". ";
 			if (Scanner.budgets.checkCampaignBudgetsDaily(""+campaignid, dailyBudget))
-				reason += "Campaign daily budget exceeded. ";
+				reason += "Campaign daily cost: " + dailyCost.getDoubleValue() + " exceeded: " + dailyBudget.getDoubleValue() + ". ";
 			if (Scanner.budgets.checkCampaignBudgetsHourly(""+campaignid, hourlyBudget))
-				reason += "Campaign hourly budget exceeded. ";
+				reason += "Campaign hourly cost: " + hourlyCost.getDoubleValue() + " exceeded: " + hourlyBudget.getDoubleValue() + ". ";
 
 		}
 

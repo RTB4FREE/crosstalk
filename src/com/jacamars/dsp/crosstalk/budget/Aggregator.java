@@ -3,12 +3,14 @@ package com.jacamars.dsp.crosstalk.budget;
 import java.nio.charset.StandardCharsets;
 
 
+
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,10 +38,10 @@ import com.jacamars.dsp.crosstalk.tools.InternalHashMap;
  */
 public class Aggregator {
 
-	/** Location of the daily file query */
+	/** Location of the daily file query, Also used for Hourly */
 	static final String DAILY_FILE = "query/daily.json";
 
-	/** The total file querry */
+	/** The total file query */
 	static final String TOTAL_FILE = "query/total.json";
 
 	/** Global accumulator */
@@ -138,8 +140,9 @@ public class Aggregator {
 	 */
 	public Aggregator(int mode, String host, int port) throws Exception {
 		this.mode = mode;
-		if (mode != TOTAL)
+		if (mode != TOTAL) {
 			content = new String(Files.readAllBytes(Paths.get(DAILY_FILE)), StandardCharsets.UTF_8);
+		}
 		else
 			content = new String(Files.readAllBytes(Paths.get(TOTAL_FILE)), StandardCharsets.UTF_8);
 
@@ -195,14 +198,14 @@ public class Aggregator {
 			Long startDaily = now - (24 * 60 * 60 * 1000);
 			data = data.replaceAll("_NOWMINUS_", startDaily.toString());
 			data = data.replaceAll("_INTERVAL_", "1d");
-			logger.info("Daily aggregation, from: " + startDaily.toString() + " to: " + now.toString());
+			logger.info("Daily aggregation, from: " + new Date(startDaily) + " to: " + new Date(now));
 			break;
 		case HOURLY:
 			data = data.replaceAll("_NOW_", now.toString());
 			Long startHourly = now - (60 * 60 * 1000);
 			data = data.replaceAll("_NOWMINUS_", startHourly.toString());
 			data = data.replaceAll("_INTERVAL_", "1h");
-			logger.info("Hourly aggregation, from: " + startHourly.toString() + " to: " + now.toString());
+			logger.info("Hourly aggregation, from: " + new Date( startHourly) + " to: " + new Date( now ));
 			break;
 		default:
 			/*
@@ -214,11 +217,13 @@ public class Aggregator {
 	       calendar.set(Calendar.SECOND, 0);
 	       calendar.set(Calendar.MILLISECOND, 0);
 				 String nowTime = Long.toString(calendar.getTime().getTime());
-				 logger.info("Total aggregation, from: " + nowTime);
+				 logger.info("Total aggregation, from: " + new Date(now));
 
 		   data = data.replaceAll("_NOW_", nowTime);
 		   index = "bidagg-*";
 		}
+		
+		logger.debug("Query: {}",data);
 
 		HttpEntity entity = new NStringEntity(data, ContentType.APPLICATION_JSON);
 		Response indexResponse = null;
@@ -264,7 +269,9 @@ public class Aggregator {
 
 		map = mapper.readValue(data, Map.class);
 		data = mapper.writer().withDefaultPrettyPrinter().writeValueAsString(map);
-
+		
+		logger.debug("Result: {}",data);
+		
 		latency = (Integer) map.get("took");
 		Boolean timedout = (Boolean) map.get("timed_out");
 		if (timedout)
@@ -318,12 +325,15 @@ public class Aggregator {
 	/**
 	 * Handle the daily hourly data. This is split from doDailyHourly so we can use simulated days.
 	 * @param data String. The data to process.
+	 * Note the key "dailyagg" is interpreted to be hourlyagg when the mode is hourly.
 	 * @throws Exception on JSON errors.
 	 */
 	private void doDailyHourly(String data) throws Exception {
 
 		map = mapper.readValue(data, Map.class);
 		data = mapper.writer().withDefaultPrettyPrinter().writeValueAsString(map);
+		
+		logger.debug("Result: {}",data);
 
 		latency = (Integer) map.get("took");
 		Boolean timedout = (Boolean) map.get("timed_out");
@@ -334,6 +344,7 @@ public class Aggregator {
 		if (x == null) {                        // no data yet
 		    return;
         }
+		
 		x = (Map) x.get("dailyagg");
 		List<Map> buckets = (List) x.get("buckets");
 
@@ -390,10 +401,14 @@ public class Aggregator {
 		switch (mode) {
 		case DAILY:
 			c.setDaily_price(p);
+			logger.debug("SET DAILY PRICE: {} in Campaign {}", p, c.id);
 			break;
 		case HOURLY:
 			c.delta.add(p);
 			c.setHourly_price(p);
+			
+			logger.debug("SET HOURLY PRICE: {} in Campaign {}",p,c.id);
+			
 			break;
 		default:
 			c.setTotal_price(p);
@@ -446,10 +461,7 @@ public class Aggregator {
 					c.addCreative(creat);
 				}
 				setPrice(creat, price);
-				// System.out.println("\t\t" + key + ", " + id + ", " + price);
-				// total += price;
 			}
-			// System.out.println("\t\tCheck: " + total);
 		}
 	}
 
