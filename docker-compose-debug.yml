@@ -115,25 +115,3 @@ services:
       - zerospike
     command: bash -c "./wait-for-it.sh $$BROKERLIST -t 120 && ./wait-for-it.sh zerospike:6000 -t 120 && sleep 1; ./rtb4free"
 
-  crosstalk:
-    image: "jacamars/crosstalk:pd"
-    # image: "jacamars/crosstalk:v1"
-    ports:
-      - "8100:8100"
-      - "7002:9002"
-    environment:
-      REGION: "US"
-      GHOST: "$GHOST"
-      AHOST: "$AHOST"
-      BROKERLIST: "kafka:9092"
-      PUBSUB: "zerospike"
-      CONTROL: "8100"
-      JDBC: "jdbc:mysql://db/rtb4free?user=ben&password=test"
-      PASSWORD: "test"
-    command: bash -c "./wait-for-it.sh $$BROKERLIST --timeout=120 && ./wait-for-it.sh zerospike:6000 --timeout=120 && ./wait-for-it.sh db:3306 --timeout=120 && sleep 1; ./crosstalk"
-#    command: bash -c "./wait-for-it.sh kafka1:9093 -t 120 && ./wait-for-it.sh zerospike:6000 -t 120 && sleep 1; ./crosstalk-jmx"
-    depends_on:
-      - kafka
-      - zerospike
-      - db
-
