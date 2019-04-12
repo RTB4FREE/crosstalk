@@ -21,7 +21,7 @@ services:
       - zookeeper
 
   zerospike:
-    image: "jacamars/zerospike:pd"
+    image: "jacamars/zerospike:v1"
     environment:
       BROKERLIST: "kafka:9092"
       STATUSCHANNEL: "kafka://[$$BROKERLIST]&topic=status"

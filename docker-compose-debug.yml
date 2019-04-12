@@ -21,7 +21,7 @@ services:
       - zookeeper
 
   zerospike:
-    image: "jacamars/zerospike:pd"
+    image: "jacamars/zerospike:v1"
     environment:
       BROKERLIST: "kafka:9092"
       STATUSCHANNEL: "kafka://[$$BROKERLIST]&topic=status"
@@ -65,7 +65,7 @@ services:
       - ELASTICSEARCH_KIBANA_URL=
 
   bidder:
-    image: "jacamars/rtb4free:pd"
+    image: "jacamars/rtb4free:v1"
     environment:
       GDPR_MODE: "false"
       
