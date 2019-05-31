@@ -8,8 +8,9 @@ import java.nio.file.Paths;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Date;
+
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 import com.fasterxml.jackson.databind.node.MissingNode;
@@ -30,8 +31,11 @@ import com.jacamars.dsp.rtb.common.Dimension;
 import com.jacamars.dsp.rtb.common.Dimensions;
 import com.jacamars.dsp.rtb.common.HttpPostGet;
 import com.jacamars.dsp.rtb.common.Node;
-import com.jacamars.dsp.rtb.db.User;
+
+import com.jacamars.dsp.rtb.common.AudioCreative;
+
 import com.jacamars.dsp.rtb.exchanges.adx.AdxCreativeExtensions;
+
 
 /**
  * A class that creates an RTB4FREE creative from the MySQL definition of a creative.
@@ -86,6 +90,8 @@ public class AccountingCreative implements Comparable<Object> {
 	/** When true, this is a banner, else it is a video. Will need updating for native and audio support */
 	protected boolean isBanner;
 	
+	protected boolean isAudio;
+	
 	/** The content type of the banner template */
 	protected String contenttype = "";
 	
@@ -120,6 +126,8 @@ public class AccountingCreative implements Comparable<Object> {
 	
 	/** The mime type of the video */
 	protected String video_mimetype = null;
+	
+	protected Integer video_delivery = null;
 
 	/** The table name where this thing is stored in sql */
 	protected String tableName = null;
@@ -189,6 +197,10 @@ public class AccountingCreative implements Comparable<Object> {
 	protected boolean interstitialOnly = false;
 
 	protected String status = "Active";
+	
+	protected String creative_attributes;
+	
+	protected AudioCreative audio;
 
 	String getType() {
 		type = "banner";
@@ -225,10 +237,13 @@ public class AccountingCreative implements Comparable<Object> {
 
 	}
 
-	public AccountingCreative(ObjectNode myNode, boolean isBanner) throws Exception {
+	public AccountingCreative(ObjectNode myNode, boolean isBanner, boolean isAudio) throws Exception {
 		this.isBanner = isBanner;
+		this.isAudio = isAudio;
 		if (isBanner)
 			tableName = "banners";
+		else if (isAudio)
+			tableName = "banner_audio";
 		else
 			tableName = "banner_videos";
 		update(myNode);
@@ -265,6 +280,8 @@ public class AccountingCreative implements Comparable<Object> {
 	public void process() throws Exception {
 		bannerid = myNode.get(BANNER_ID).asText();
 		campaignid = myNode.get(CAMPAIGN_ID).asInt();
+		creative_attributes = myNode.get("campaign_attributes").asText();
+		
 		if (isBanner) {
 			imageurl = myNode.get(IMAGE_URL).asText(null);
 		}
@@ -289,6 +306,35 @@ public class AccountingCreative implements Comparable<Object> {
 
 			if (myNode.get("position") != null)
 				position = myNode.get("position").asText(null);
+		} if (isAudio) {
+			contenttype = myNode.get(CONTENT_TYPE).asText();
+			htmltemplate = myNode.get(HTML_TEMPLATE).asText();
+			htmltemplate = htmltemplate.replaceAll("\n", "");
+			htmltemplate = htmltemplate.replaceAll("\r", "");
+			
+			audio = new AudioCreative();
+			if (myNode.get("duration")  == null)
+				audio.duration = myNode.get("duration").asInt();
+			if (myNode.get("protocol") == null)
+				audio.protocol = myNode.get("protocol").asInt();
+			if (myNode.get("startdelay") == null)
+				audio.startdelay = myNode.get("startdelay").asInt();
+			if (myNode.get("sequence") == null)
+				audio.sequence = myNode.get("sequence").asInt();
+			if (myNode.get("maxextended") == null)
+				audio.maxextended = myNode.get("maxextended").asInt();
+			if (myNode.get("bitrate") == null)
+				audio.bitrate = myNode.get("bitrate").asInt();
+			if (myNode.get("delivery") == null)
+				audio.delivery = myNode.get("delivery").asInt();
+			if (myNode.get("api") == null)
+				audio.api = myNode.get("api").asInt();
+			if (myNode.get("maxseq") == null)
+				audio.maxseq = myNode.get("maxseq").asInt();
+			if (myNode.get("feed") == null)
+				audio.feed = myNode.get("feed").asInt();
+			if (myNode.get("stitched") == null)
+				audio.stitched = myNode.get("stitched").asInt();
 		} else {
 			video_duration = myNode.get("vast_video_duration").asInt();
 			video_width = myNode.get("vast_video_width").asInt();
@@ -306,6 +352,9 @@ public class AccountingCreative implements Comparable<Object> {
 			if (myNode.get("bitrate") != null) {
 				video_bitrate = new Integer(myNode.get("bitrate").asInt());
 			}
+			
+			if (myNode.get("delivery") instanceof MissingNode == false)
+				video_delivery = myNode.get("delivery").asInt();
 		}
 
 		if (myNode.get(INTERSTITIAL) != null && myNode.get(INTERSTITIAL) instanceof MissingNode == false) {
@@ -416,6 +465,8 @@ public class AccountingCreative implements Comparable<Object> {
 
 			}
 
+		} if (isAudio) {
+			compileAudio(c);
 		} else
 			compileVideo(c);
 
@@ -455,6 +506,17 @@ public class AccountingCreative implements Comparable<Object> {
 			d.id = subpart[0].trim();
 			d.price = Double.parseDouble(subpart[1].trim());
 			c.deals.add(d);
+		}
+	}
+	
+	public void compileBlockedAttributes(Creative creative() {
+		if (creative_attributes.length()>0 ) {
+			String[] data = creative_attributes.split(",");
+			creative.creativeAttributes = new HashSet<Integer>();
+			for (String s : data) {
+				s = s.trim();
+				creative.creativeAttributes.add(Integer.parseInt(s));
+			}
 		}
 	}
 
@@ -522,6 +584,14 @@ public class AccountingCreative implements Comparable<Object> {
 			}
 		}
 	}
+	
+	protected void compileAudio(Creative c) throws Exception {
+		c.attributes = new ArrayList<Node>();
+		audio.mimeType = MimeTypes.determineType(htmltemplate);
+		c.audioAd = audio;
+		c.adm = new ArrayList<String>();
+		c.adm.add(htmltemplate);
+	}
 
 	/**
 	 * Compile the video specific components of a creative.
@@ -566,6 +636,8 @@ public class AccountingCreative implements Comparable<Object> {
 		} else {
 			theVideo = video_data;
 		}
+		
+		c.delivery = video_delivery;
 
 		StringBuilder sb = new StringBuilder(theVideo);
 		xmlEscapeEncoded(sb);
