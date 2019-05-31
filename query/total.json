@@ -55,7 +55,7 @@
             },
             "creativeidagg": {
               "terms": {
-                "field": "creative_id",
+                "field": "creativeid",
                 "size": 1000,
                 "order": {
                   "costagg": "desc"

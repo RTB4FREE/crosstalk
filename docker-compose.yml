@@ -65,23 +65,10 @@ services:
       - ELASTICSEARCH_KIBANA_URL=
 
   bidder:
-    image: "jacamars/rtb4free:pd"
+    image: "jacamars/rtb4free:v1"
     environment:
       GDPR_MODE: "false"
       
-      BROKERLIST: "kafka:9092"
-      
-      BIDSCHANNEL: "$BIDSCHANNEL"
-      WINSCHANNEL: "$WINSCHANNEL"
-      REQUESTSCHANNEL: "$REQUESTSCHANNEL"
-      CLICKSCHANNEL: "$CLICKSCHANNEL"
-      PIXELSCHANNEL: "$PIXELSCHANNEL"
-      VIDEOEVENTSCHANNEL: "$VIDEOEVENTSCHANNEL"
-      POSTBACKEVENTSCHANNEL: "$POSTBACKEVENTSCHANNEL"
-      STATUSCHANNEL: "$STATUSCHANNEL"
-      REASONSCHANNEL: "$REASONSCHANNEL"  
-      LOGCHANNEL: "$LOGCHANNEL"
-         
       BROKERLIST: "kafka:9092"
       
       PUBSUB: "zerospike"
@@ -116,8 +103,7 @@ services:
     command: bash -c "./wait-for-it.sh $$BROKERLIST -t 120 && ./wait-for-it.sh zerospike:6000 -t 120 && sleep 1; ./rtb4free"
 
   crosstalk:
-    image: "jacamars/crosstalk:pd"
-    # image: "jacamars/crosstalk:v1"
+    image: "jacamars/crosstalk:v1"
     ports:
       - "8100:8100"
       - "7002:9002"
