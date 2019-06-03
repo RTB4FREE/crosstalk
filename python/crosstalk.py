@@ -2,6 +2,34 @@ import requests
 import json
 import pprint
 
+
+def ConfigureAwsObject(symbolName):
+    try:
+        r = requests.post(globalHost, data='{"type":"ConfigureAws#","symbol":"'+symbolName+'"}')
+        print (r.status_code, r.reason)
+        print (r.text)
+    except requests.exceptions.RequestException as e:
+        print('Connection error')
+        return 503, None
+
+def RemoveSymbol(symbolName):
+    try:
+        r = requests.post(globalHost, data='{"type":"RemoveSymbol#","symbol":"'+symbolName+'"}')
+        print (r.status_code, r.reason)
+        print (r.text)
+    except requests.exceptions.RequestException as e:
+        print('Connection error')
+        return 503, None
+
+def ListSymbols():
+    try:
+        r = requests.post(globalHost, data='{"type":"ListSymbols#"}')
+        print (r.status_code, r.reason)
+        print (r.text)
+    except requests.exceptions.RequestException as e:
+        print('Connection error')
+        return 503, None
+
 #
 # Ping the system
 def Ping():
@@ -329,3 +357,4 @@ def PP(x):
     
 globalHost = "http://localhost:8100/api"
 pp = pprint.PrettyPrinter(indent=4)
+

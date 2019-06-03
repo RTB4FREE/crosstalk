@@ -334,6 +334,15 @@ public enum Configuration {
 		}
 	}
 
+	public String listSymbols(String id) throws Exception {
+		ListSymbols ls = new ListSymbols();
+		ls.from = WebAccess.uuid;
+		ls.id = id;
+		ls.to = "*";
+		sendCommand(true, ls);
+		return ls.id;
+	}
+	
 	/**
 	 * For some reason, campaigns are missing from a bidder.... Fix it.
 	 * @param whom String. Who it is missing from.

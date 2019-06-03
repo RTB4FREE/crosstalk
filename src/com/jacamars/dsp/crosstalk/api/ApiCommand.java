@@ -121,6 +121,12 @@ public class ApiCommand {
      * Get the weights on a campaign
      */
     public static final String GetWeights = "GetWeights#";
+    
+    /** Remove a symbol from the bidder */
+    public static final String RemoveSymbol = "RemoveSymbol#";
+
+    /** Add a symbol to the bidder */
+    public static final String ListSymbols = "ListSymbols#";
 
     /**
      * This class'es sl4j log object
@@ -402,6 +408,16 @@ public class ApiCommand {
                 GetWeightsCmd gwc = mapper.readValue(data, GetWeightsCmd.class);
                 gwc.execute();
                 return gwc;
+                
+            case RemoveSymbol:
+                RemoveSymbolCmd rsc = mapper.readValue(data, RemoveSymbolCmd.class);
+                rsc.execute();
+                return rsc;
+
+            case ListSymbols:
+                ListSymbolsCmd lsc = mapper.readValue(data, ListSymbolsCmd.class);
+                lsc.execute();
+                return lsc;
 
             default:
                 UnknownCmd unk = new UnknownCmd(token);
