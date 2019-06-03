@@ -97,6 +97,12 @@ public class ApiCommand {
      * Configure AWS command
      */
     public static final String ConfigureAws = "ConfigureAws#";
+    
+    /**
+     * Configure a file object 
+     */
+    public static final String Configure = "Configure#";
+    
     /**
      * The unbkown command, is returned if Web API can't figure out what to do
      */
@@ -375,6 +381,11 @@ public class ApiCommand {
                 ConfigureAwsObjectCmd aws = mapper.readValue(data, ConfigureAwsObjectCmd.class);
                 aws.execute();
                 return aws;
+                
+            case Configure:
+                ConfigureObjectCmd obj = mapper.readValue(data, ConfigureObjectCmd.class);
+                obj.execute();
+                return obj;
 
             case Future:
                 FutureCmd fut = mapper.readValue(data, FutureCmd.class);
