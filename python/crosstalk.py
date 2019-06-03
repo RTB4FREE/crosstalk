@@ -2,7 +2,15 @@ import requests
 import json
 import pprint
 
-
+def ConfigureObject(symbolName,fileName,typeName):
+    try:
+        r = requests.post(globalHost, data='{"type":"Configure#","symbol":"'+symbolName+',"file":"'+fileName+',"type":"'+typeName+"}')
+        print (r.status_code, r.reason)
+        print (r.text)
+    except requests.exceptions.RequestException as e:
+        print('Connection error')
+        return 503, None
+        
 def ConfigureAwsObject(symbolName):
     try:
         r = requests.post(globalHost, data='{"type":"ConfigureAws#","symbol":"'+symbolName+'"}')
