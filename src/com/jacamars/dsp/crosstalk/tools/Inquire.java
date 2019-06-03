@@ -87,7 +87,7 @@ public class Inquire {
 				if (xnode != null) {
 					for (int k = 0; k < xnode.size(); k++) {
 						ObjectNode znode = (ObjectNode) xnode.get(k);
-						AccountingCreative creative = new AccountingCreative(znode, true);
+						AccountingCreative creative = new AccountingCreative(znode, true,false);
 
 						boolean isActive = creative.isActive();
 						boolean isExceeded = creative.budgetExceeded();
@@ -107,7 +107,7 @@ public class Inquire {
 				if (xnode != null) {
 					for (int k = 0; k < xnode.size(); k++) {
 						ObjectNode znode = (ObjectNode) xnode.get(k);
-						AccountingCreative creative = new AccountingCreative(znode, false);
+						AccountingCreative creative = new AccountingCreative(znode, false,false);
 
 						boolean isActive = creative.isActive();
 						boolean isExceeded = creative.budgetExceeded();
@@ -119,6 +119,30 @@ public class Inquire {
 							markup += "...";
 						}
 						System.out.println(String.format("\t%s\tVIDEO\t%b\t%b\t%d\t%d\t%s", creative.bannerid,
+								isActive, isExceeded, width, height, markup));
+					}
+				}
+				camp.compile();
+				if ((list != null) && (list.size() > 0)) {
+					System.out.println(camp.getOutput());
+				}
+				
+				xnode = (ArrayNode) node.get("banner_audio");
+				if (xnode != null) {
+					for (int k = 0; k < xnode.size(); k++) {
+						ObjectNode znode = (ObjectNode) xnode.get(k);
+						AccountingCreative creative = new AccountingCreative(znode, false,true);
+
+						boolean isActive = creative.isActive();
+						boolean isExceeded = creative.budgetExceeded();
+						int width = creative.width;
+						int height = creative.height;
+						String markup = creative.video_data;
+						if (markup.length() > 64) {
+							markup = markup.substring(0, 64);
+							markup += "...";
+						}
+						System.out.println(String.format("\t%s\tAUDIO\t%b\t%b\t%d\t%d\t%s", creative.bannerid,
 								isActive, isExceeded, width, height, markup));
 					}
 				}
