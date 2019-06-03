@@ -261,6 +261,15 @@ public class Scanner implements Runnable, ScannerIF {
 			ArrayNode inner = ResultSetToJSON.convert(rs);
 			x.set("banner_video", inner);
 		}
+		
+		// Audio
+		for (int i = 0; i < nodes.size(); i++) {
+			ObjectNode x = (ObjectNode) nodes.get(i);
+			int campaignid = x.get("id").asInt(); ///////// CHECK
+			rs = stmt.executeQuery("select * from banner_audio where campaign_id = " + campaignid);
+			ArrayNode inner = ResultSetToJSON.convert(rs);
+				x.set("banner_audio", inner);
+			}
 	}
 
 

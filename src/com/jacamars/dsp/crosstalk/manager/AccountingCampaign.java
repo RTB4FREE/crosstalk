@@ -308,8 +308,9 @@ public class AccountingCampaign {
 		ObjectNode targ = (ObjectNode) getMyNode().get("targetting");
 		targeting = new Targeting(this, targ);
 
-		instantiate("banner", true);
-		instantiate("banner_video", false);
+		instantiate("banner", true, false);
+		instantiate("banner_video", false, false);
+		instantiate("banner_audio", false, true);
 		compile();
 	}
 
@@ -376,7 +377,7 @@ public class AccountingCampaign {
 	 * @throws Exception on SQL or JSON errors.
 	 * 
 	 */
-	protected void instantiate(String type, boolean isBanner) throws Exception {
+	protected void instantiate(String type, boolean isBanner,boolean isAudio) throws Exception {
 
 		ArrayNode array = (ArrayNode) getMyNode().get(type);
 		if (array == null)
@@ -384,7 +385,7 @@ public class AccountingCampaign {
 
 		for (int i = 0; i < array.size(); i++) {
 			ObjectNode node = (ObjectNode) array.get(i);
-			AccountingCreative creative = new AccountingCreative(node, isBanner); // Mobi!
+			AccountingCreative creative = new AccountingCreative(node, isBanner, isAudio); // Mobi!
 			if (!(creative.budgetExceeded())) {
 				unpark(creative);
 				Scanner.creativesMap.put("" + campaignid + ":" + creative.bannerid, creative);

@@ -509,7 +509,7 @@ public class AccountingCreative implements Comparable<Object> {
 		}
 	}
 	
-	public void compileBlockedAttributes(Creative creative() {
+	public void compileBlockedAttributes(Creative creative) {
 		if (creative_attributes.length()>0 ) {
 			String[] data = creative_attributes.split(",");
 			creative.creativeAttributes = new HashSet<Integer>();
