@@ -280,7 +280,8 @@ public class AccountingCreative implements Comparable<Object> {
 	public void process() throws Exception {
 		bannerid = myNode.get(BANNER_ID).asText();
 		campaignid = myNode.get(CAMPAIGN_ID).asInt();
-		creative_attributes = myNode.get("campaign_attributes").asText();
+		if (myNode.get("campaign_attributes") != null)
+			creative_attributes = myNode.get("campaign_attributes").asText();
 		
 		if (isBanner) {
 			imageurl = myNode.get(IMAGE_URL).asText(null);
@@ -306,7 +307,7 @@ public class AccountingCreative implements Comparable<Object> {
 
 			if (myNode.get("position") != null)
 				position = myNode.get("position").asText(null);
-		} if (isAudio) {
+		} else if (isAudio) {
 			contenttype = myNode.get(CONTENT_TYPE).asText();
 			htmltemplate = myNode.get(HTML_TEMPLATE).asText();
 			htmltemplate = htmltemplate.replaceAll("\n", "");
@@ -353,7 +354,7 @@ public class AccountingCreative implements Comparable<Object> {
 				video_bitrate = new Integer(myNode.get("bitrate").asInt());
 			}
 			
-			if (myNode.get("delivery") instanceof MissingNode == false)
+			if (myNode.get("delivery") != null)
 				video_delivery = myNode.get("delivery").asInt();
 		}
 
@@ -465,7 +466,7 @@ public class AccountingCreative implements Comparable<Object> {
 
 			}
 
-		} if (isAudio) {
+		} else if (isAudio) {
 			compileAudio(c);
 		} else
 			compileVideo(c);

@@ -1,0 +1,35 @@
+#
+# Contains the full stack of bidder3 (not including elk)
+#
+
+version: "3"
+
+services:
+
+  db:
+    image: ploh/mysqlrtb
+    ports:
+    - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=rtb4free
+      - MYSQL_DATABASE=rtb4free
+      - MYSQL_USER=ben
+      - MYSQL_PASSWORD=test
+      
+  web:
+    image: ploh/rtbadmin_open
+    command: bash -c "./wait_for_it.sh db:3306 --t120; bundle exec rails s -p 3000 -b '0.0.0.0'"
+    ports:
+      - "3000:3000"
+    environment:
+      - CUSTOMER_NAME=RTB4FREE
+      - RTB4FREE_DATABASE_HOST=db
+      - RTB4FREE_DATABASE_PORT=3306
+      - RTB4FREE_DATABASE_USERNAME=ben
+      - RTB4FREE_DATABASE_PASSWORD=test
+      - RTB4FREE_DATABASE_NAME=rtb4free
+      - RTB_CROSSTALK_REGION_HOSTS={"US" => "localhost"}
+      - ELASTICSEARCH_ENABLE=false
+      - ELASTICSEARCH_HOST=
+      - ELASTICSEARCH_KIBANA_URL=
+

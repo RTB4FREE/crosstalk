@@ -134,6 +134,10 @@ public class ApiCommand {
     /** Add a symbol to the bidder */
     public static final String ListSymbols = "ListSymbols#";
 
+    /** Query a symbol value */
+    public static final String QuerySymbol = "QuerySymbol#";
+    
+    
     /**
      * This class'es sl4j log object
      */
@@ -429,6 +433,11 @@ public class ApiCommand {
                 ListSymbolsCmd lsc = mapper.readValue(data, ListSymbolsCmd.class);
                 lsc.execute();
                 return lsc;
+                
+            case QuerySymbol:
+                QueryCmd qc = mapper.readValue(data, QueryCmd.class);
+                qc.execute();
+                return qc;
 
             default:
                 UnknownCmd unk = new UnknownCmd(token);

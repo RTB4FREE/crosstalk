@@ -4,7 +4,7 @@ import pprint
 
 def ConfigureObject(symbolName,fileName,typeName):
     try:
-        r = requests.post(globalHost, data='{"type":"Configure#","symbol":"'+symbolName+',"file":"'+fileName+',"type":"'+typeName+"}')
+        r = requests.post(globalHost, data='{"type":"Configure#","name":"'+symbolName+'","fileName":"'+fileName+'","fileType":"'+typeName+'"}')
         print (r.status_code, r.reason)
         print (r.text)
     except requests.exceptions.RequestException as e:
@@ -29,6 +29,15 @@ def RemoveSymbol(symbolName):
         print('Connection error')
         return 503, None
 
+def QuerySymbol(symbolName,key):
+    try:
+        r = requests.post(globalHost, data='{"type":"QuerySymbol#","symbol":"'+symbolName+'","key":"'+key+'"}')
+        print (r.status_code, r.reason)
+        print (r.text)
+    except requests.exceptions.RequestException as e:
+        print('Connection error')
+        return 503, None
+        
 def ListSymbols():
     try:
         r = requests.post(globalHost, data='{"type":"ListSymbols#"}')

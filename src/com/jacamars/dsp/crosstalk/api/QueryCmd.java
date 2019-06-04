@@ -7,32 +7,32 @@ import java.util.Random;
 import com.jacamars.dsp.rtb.commands.ConfigureAwsObject;
 import com.jacamars.dsp.rtb.commands.ConfigureObject;
 import com.jacamars.dsp.rtb.commands.ListSymbols;
+import com.jacamars.dsp.rtb.commands.QuerySymbol;
 import com.jacamars.dsp.rtb.commands.SetPrice;
 import com.jacamars.dsp.crosstalk.manager.Configuration;
 import com.jacamars.dsp.crosstalk.manager.Scanner;
 
 /**
- * Web API access to configure an object from the file system, a bloom filter,
+ * Web API access to query a symbol
  * etc.
  * 
  * @author Ben M. Faul
  *
  */
-public class ConfigureObjectCmd extends ApiCommand {
+public class QueryCmd extends ApiCommand {
 
 	/** The results of the command */
 	public String updated;
 
 	/** The command to execute */
-	public String name;
-	public String fileName;
-	public String fileType;
+	public String symbol;
+	public String key;
 
 	/**
 	 * Default constructor
 	 */
 
-	public ConfigureObjectCmd() {
+	public QueryCmd() {
 
 	}
 
@@ -42,9 +42,9 @@ public class ConfigureObjectCmd extends ApiCommand {
 	 * @param username String. User authorization for command.
 	 * @param password String. Password authorization for command.
 	 */
-	public ConfigureObjectCmd(String username, String password) {
+	public QueryCmd(String username, String password) {
 		super(username, password);
-		type = Configure;
+		type = QuerySymbol;
 	}
 
 	/**
@@ -54,12 +54,11 @@ public class ConfigureObjectCmd extends ApiCommand {
 	 * @param password String. Password authorization.
 	 * @param target   String. The bidder to start.
 	 */
-	public ConfigureObjectCmd(String username, String password, String name, String fileName, String fileType) {
+	public QueryCmd(String username, String password, String name, String key ) {
 		super(username, password);
-		this.name = name;
-		this.fileName = name;
-		this.fileType = fileType;
-		type = Configure;
+		this.symbol = symbol;
+		this.key = key;
+		type = QuerySymbol;
 	}
 
 	/**
@@ -80,9 +79,8 @@ public class ConfigureObjectCmd extends ApiCommand {
 			@Override
 			public void run() {
 				try {
-					logger.debug("EXECUTING THE FILE CONFIGURATION COMMAND: " + name + "/" + fileName + "/" + fileType);
-					ConfigureObject sp = new ConfigureObject("", name, fileName, fileType);
-
+					logger.debug("EXECUTING THE QUERY COMMAND: " + symbol + "/" + key);
+					QuerySymbol sp = new QuerySymbol("", symbol, key);
 					sp.from = WebAccess.uuid;
 					sp.id = "" + id;
 					sp.to = "*";
