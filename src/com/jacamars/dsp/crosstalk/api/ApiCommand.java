@@ -96,12 +96,12 @@ public class ApiCommand {
     /**
      * Configure AWS command
      */
-    public static final String ConfigureAws = "ConfigureAws#";
+    public static final String ConfigureAws = "AddSymbolS3#";
     
     /**
      * Configure a file object 
      */
-    public static final String Configure = "Configure#";
+    public static final String Configure = "AddSymbolFile#";
     
     /**
      * The unbkown command, is returned if Web API can't figure out what to do
