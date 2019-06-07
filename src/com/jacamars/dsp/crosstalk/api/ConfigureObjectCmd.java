@@ -26,7 +26,7 @@ public class ConfigureObjectCmd extends ApiCommand {
 	/** The command to execute */
 	public String name;
 	public String fileName;
-	public String fileType;
+	public String symbolType;
 
 	/**
 	 * Default constructor
@@ -58,7 +58,7 @@ public class ConfigureObjectCmd extends ApiCommand {
 		super(username, password);
 		this.name = name;
 		this.fileName = name;
-		this.fileType = fileType;
+		this.symbolType = fileType;
 		type = Configure;
 	}
 
@@ -80,8 +80,8 @@ public class ConfigureObjectCmd extends ApiCommand {
 			@Override
 			public void run() {
 				try {
-					logger.debug("EXECUTING THE FILE CONFIGURATION COMMAND: " + name + "/" + fileName + "/" + fileType);
-					ConfigureObject sp = new ConfigureObject("", name, fileName, fileType);
+					logger.debug("EXECUTING THE FILE CONFIGURATION COMMAND: " + name + "/" + fileName + "/" + symbolType);
+					ConfigureObject sp = new ConfigureObject("", name, fileName, symbolType);
 
 					sp.from = WebAccess.uuid;
 					sp.id = "" + id;

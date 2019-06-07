@@ -20,8 +20,11 @@ public class ConfigureAwsObjectCmd extends ApiCommand {
 	/** The results of the command */
 	public String updated;
 	
+	public String name;
+	public String bucket;
+	public String symbolType;
 	/** The command to execute */
-	public String command;
+	String command;
 	
 	/**
 	 * Default constructor
@@ -54,9 +57,11 @@ public class ConfigureAwsObjectCmd extends ApiCommand {
 	 * @param target
 	 *            String. The bidder to start.
 	 */
-	public ConfigureAwsObjectCmd(String username, String password, String target) {
+	public ConfigureAwsObjectCmd(String username, String password, String name, String bucket, String symbolType) {
 		super(username, password);
-		command = target;
+		this.name = name;
+		this.bucket = bucket;
+		this.symbolType = symbolType;
 		type = ConfigureAws;
 	}
 
@@ -74,6 +79,7 @@ public class ConfigureAwsObjectCmd extends ApiCommand {
 	public void execute() {
 			super.execute();	
 			try {
+				command = "load S3:"+name+":"+bucket+":"+symbolType;
 				logger.debug("EXECUTING THE CONFIGURATION COMMAND: " + command);
 				ConfigureAwsObject sp = new ConfigureAwsObject("","",command);
 				sp.from = WebAccess.uuid + "-" + new Random().nextLong();

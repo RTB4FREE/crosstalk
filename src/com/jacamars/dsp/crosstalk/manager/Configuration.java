@@ -222,59 +222,8 @@ public enum Configuration {
 		shared = DataBaseObject.getInstance(redisson);
 
 		responses = new RTopic(RESPONSES);
-		responses.addListener(new MessageListener<BasicCommand>() {
-			@Override
-			public void onMessage(String channel, BasicCommand msg) {
-				try {
-					BidderProtocol.processAck(msg);
-					if (msg.from.startsWith("crosstalk"))
-						return;
-
-					if (msg.cmd == Controller.SHUTDOWNNOTICE) {
-						if (Crosstalk.tracker != null)
-							Crosstalk.tracker.remove(msg.from);
-						logger.warn("This bidder has sent a shutdown notice: {}", msg.from);
-						return;
-					}
-
-					if (msg.to.startsWith(WebAccess.uuid)) {
-						ApiCommand.callBack(msg);
-						return;
-					}
-
-					if (Crosstalk.node != null)
-						Crosstalk.node.addMember(msg.from);
-
-					String content = mapper.writer().withDefaultPrettyPrinter().writeValueAsString(msg);
-					// System.out.println("<------" + content);
-					logger.debug(
-							"Bidder(s) sent command response: {}, id: {}", msg.toString(), msg.id);
-
-
-					if (msg.cmd == Controller.LIST_CAMPAIGNS_RESPONSE) {
-						Configuration.getInstance().checkRunning(msg);
-						return;
-					}
-
-					if (msg.cmd == Controller.ECHO) {
-						int count = 0;
-						while (Crosstalk.tracker == null && count < 15) {
-							Thread.sleep(1000);
-							count++;
-						}
-						if (Crosstalk.node == null) {
-							logger.warn("Campaigns:node:error: node processor is down");
-							return;
-						}
-
-						Crosstalk.tracker.checkFor(msg);
-					}
-					commandResponses.callBack(msg);
-				} catch (Exception error) {
-					error.printStackTrace();
-				}
-			}
-		});
+		MyMessageListener ml = new MyMessageListener(logger,commandResponses);
+		responses.addListener(ml);;
 
 		new WebAccess(config.app.getPort());
 

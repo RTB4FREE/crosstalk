@@ -1,6 +1,7 @@
 package com.jacamars.dsp.crosstalk.api;
 
 import com.jacamars.dsp.crosstalk.manager.Configuration;
+import com.jacamars.dsp.rtb.commands.BasicCommand;
 
 /**
  * Web API to list all campaigns known by crosstalk
@@ -47,18 +48,18 @@ public class ListSymbolsCmd extends ApiCommand {
 		super.execute();
 		final Long id = random.nextLong();
 		final ApiCommand theCommand = this;
-		Thread thread = new Thread(new Runnable() {
-			@Override
-			public void run(){
-				try {
-					Configuration.getInstance().listSymbols(""+id);
-				} catch (Exception e) {
-					error = true;
-					message = e.toString();
+			Thread thread = new Thread(new Runnable() {
+				@Override
+				public void run(){
+					try {
+						Configuration.getInstance().listSymbols(""+id);
+					} catch (Exception e) {
+						error = true;
+						message = e.toString();
+					}
 				}
-			}
-		});
-		thread.start();
-		asyncid = "" + id;
-	}
+			});
+			thread.start();
+			asyncid = "" + id;
+		}
 }
