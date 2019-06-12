@@ -77,16 +77,27 @@ public class ConfigureAwsObjectCmd extends ApiCommand {
 	 */
 	@Override
 	public void execute() {
-			super.execute();	
-			try {
-				command = "load S3 "+symbolType+" "+ name+" "+fileName;
-				logger.debug("EXECUTING THE CONFIGURATION COMMAND: " + command);
-				ConfigureAwsObject sp = new ConfigureAwsObject("","",command);
-				sp.from = WebAccess.uuid + "-" + new Random().nextLong();
-				Configuration.getInstance().sendCommand(true,sp);
-			} catch (Exception err) {
-				error = true;
-				message = err.toString();
+		super.execute();	
+		final Long id = random.nextLong();
+		Thread thread = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					command = "load S3 "+symbolType+" "+ name+" "+fileName;
+					logger.debug("EXECUTING THE CONFIGURATION COMMAND: " + command);
+					ConfigureAwsObject sp = new ConfigureAwsObject("","",command);
+					
+					sp.from = WebAccess.uuid;
+					sp.id = "" + id;
+					sp.to = "*";
+					Configuration.getInstance().sendCommand(true,sp);
+				} catch (Exception err) {
+					error = true;
+					message = err.toString();
+				}
 			}
+		});
+		thread.start();
+		asyncid = "" + id;
 	}
 }
