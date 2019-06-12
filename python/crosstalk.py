@@ -4,7 +4,7 @@ import pprint
 
 def AddSymbolFile(symbolName,fileName,typeName):
     try:
-        r = requests.post(globalHost, data='{"type":"AddSymbolFile#","name":"'+symbolName+'","fileName":"'+fileName+'","symbolType":"'+symbolType+'"}')
+        r = requests.post(globalHost, data='{"type":"AddSymbolFile#","name":"'+symbolName+'","fileName":"'+fileName+'","symbolType":"'+typeName+'"}')
         print (r.status_code, r.reason)
         print (r.text)
     except requests.exceptions.RequestException as e:
@@ -61,7 +61,6 @@ def Ping():
     
 def Refresh():
     try:
-        r = requests.post(globalHost, data='{"type":"Refresh#"}')
         r = requests.post(globalHost, data='{"type":"Refresh#"}')
         data = json.loads(r.text)
         if data['error']:
