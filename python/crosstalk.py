@@ -11,9 +11,9 @@ def AddSymbolFile(symbolName,fileName,typeName):
         print('Connection error')
         return 503, None
         
-def AddSymbolS3(symbolName,bucket,typeName):
+def AddSymbolS3(symbolName,fileName,typeName):
     try:
-        r = requests.post(globalHost, data='{"type":"AddSymbolS3#","name":"'+symbolName+'"bucket":"'+bucket+'","symbolType":"'+typeName+'"}')
+        r = requests.post(globalHost, data='{"type":"AddSymbolS3#","name":"'+symbolName+'","fileName":"'+fileName+'","symbolType":"'+typeName+'"}')
         print (r.status_code, r.reason)
         print (r.text)
     except requests.exceptions.RequestException as e:
