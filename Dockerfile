@@ -1,6 +1,7 @@
 FROM alpine:3.6
 MAINTAINER Ben Faul, https://github.com/benmfaul
 RUN apk --update add openjdk8-jre
+RUN apk add --no-cache nss
 RUN apk add --no-cache bash
 RUN apk add --no-cache python && \
     python -m ensurepip && \
