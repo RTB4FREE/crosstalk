@@ -28,6 +28,7 @@ import com.jacamars.dsp.rtb.common.Deal;
 import com.jacamars.dsp.rtb.common.Deals;
 import com.jacamars.dsp.rtb.common.Dimension;
 import com.jacamars.dsp.rtb.common.Dimensions;
+import com.jacamars.dsp.rtb.common.FrequencyCap;
 import com.jacamars.dsp.rtb.common.HttpPostGet;
 import com.jacamars.dsp.rtb.common.Node;
 import com.jacamars.dsp.rtb.db.User;
@@ -129,6 +130,9 @@ public class AccountingCreative implements Comparable<Object> {
 
 	/** The RTB4FREE creative that was created from this obhect */
 	public Creative creative;
+
+	// If this creative is tagged with categories. Used by bidswitch for example
+	private List<String> categories;
 	
 	/** The RTB4FREE rules nodes that are the constraints for this creative */
 	protected List<Node> nodes = new ArrayList<Node>();
@@ -189,6 +193,18 @@ public class AccountingCreative implements Comparable<Object> {
 	protected boolean interstitialOnly = false;
 
 	protected String status = "Active";
+
+	/** The frequency capping specification, as in device.ip */
+	private String capSpec;
+
+	/** Number of seconds before the frequency cap expires */
+	private int capExpire;
+
+	/** The count limit of the frequency cap */
+	private int capCount;
+
+	/** cap time unit **/
+	private String capTimeUnit;
 
 	String getType() {
 		type = "banner";
@@ -276,6 +292,14 @@ public class AccountingCreative implements Comparable<Object> {
 
 		bid_ecpm.set(myNode.get("bid_ecpm").asDouble());
 
+		String cats = myNode.get("categories").asText("");
+		if(!cats.trim().equals("")){
+			categories = new ArrayList();
+			for (String c : cats.split(",")) {
+				categories.add(c.trim());
+			}
+		}
+
 		if (isBanner) {
 			width = myNode.get("width").asInt();
 			height = myNode.get("height").asInt();
@@ -319,6 +343,15 @@ public class AccountingCreative implements Comparable<Object> {
 
 		if (myNode.get("status") != null && myNode.get("status") instanceof MissingNode == false) {
 			status = myNode.get("status").asText();
+		}
+
+		if (myNode.get("frequency_spec") != null) {
+			capSpec = myNode.get("frequency_spec").asText(null);
+			if (capSpec != null && capSpec.length() != 0) {
+				capCount = myNode.get("frequency_count").asInt(0);
+				capExpire = myNode.get("frequency_expire").asInt();
+				capTimeUnit = myNode.get("frequency_interval_type").asText();
+			}
 		}
 	}
 
@@ -375,6 +408,7 @@ public class AccountingCreative implements Comparable<Object> {
 		c.price = bid_ecpm.doubleValue();
 		c.impid = "" + bannerid;
 		c.status = this.status;
+		c.categories = categories;
 
 		if (isBanner) {
 			if (contenttype != null && (contenttype.equalsIgnoreCase("OVERRIDE"))) {
@@ -429,6 +463,16 @@ public class AccountingCreative implements Comparable<Object> {
 		compileExchangeAttributes(c);
 		c.attributes = nodes;
 		handleDeals(c);
+
+		if (capSpec != null && capSpec.length() > 0 && capCount > 0 && capExpire > 0) {
+			c.frequencyCap = new FrequencyCap();
+			c.frequencyCap.capSpecification = new ArrayList<String>();
+			Targeting.getList(c.frequencyCap.capSpecification, capSpec);
+			c.frequencyCap.capTimeout = capExpire;
+			c.frequencyCap.capFrequency = capCount;
+			c.frequencyCap.capTimeUnit = capTimeUnit;
+		}
+
 		doStandardRtb(c);
 		return c;
 	}
@@ -491,12 +535,6 @@ public class AccountingCreative implements Comparable<Object> {
 						break;
 					case "tracking_url":
 						x.adxTrackingUrl = value;
-						break;
-					case "categories":
-						value = value.replaceAll("\"", "");
-						value = value.replaceAll("\\[", "");
-						value = value.replaceAll("\\]", "");
-						x.adxCategory = new Integer(value);
 						break;
 					case "vendor_type":
 						try {
