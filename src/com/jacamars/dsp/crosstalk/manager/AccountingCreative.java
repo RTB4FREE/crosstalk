@@ -42,82 +42,82 @@ public class AccountingCreative implements Comparable<Object> {
 
 	/** The campaign this creative belongs to */
 	public int campaignid;
-	
+
 	/** The id of the cre4ative, as a string */
-	public String bannerid; 
+	public String bannerid;
 
 
 	/** Current cost of this creative */
 	public volatile AtomicBigDecimal total_cost = new AtomicBigDecimal(0);
-	
+
 	/** Total budget of this creative */
 	protected volatile AtomicBigDecimal total_budget = new AtomicBigDecimal(0);
-	
+
 	/** The bid price of this creative */
 	public volatile AtomicBigDecimal bid_ecpm = new AtomicBigDecimal(0);
 
 	/** The epoch time this creative is activated */
 	public long activate_time = 0;
-	
+
 	/** The epoch time this creative expires */
 	public long expire_time = 0;
-	
+
 	/** Whether or not this creative was updated in MySQL */
 	public long updated = 0;
 
 	/** Width of the creative */
 	public int width = 0;
-	
+
 	/** Height of the creative */
 	public int height = 0;
 
 	/** The image url */
 	public String imageurl;
-	
+
 	/** The type, as in 'banner' or 'video' */
 	String type;
-	
+
 	/** This class's logging object */
 	static final Logger logger = LoggerFactory.getLogger(AccountingCreative.class);
 
 
 	// //////////////// BANNER SPECIFIC TARGETING
-	
+
 	/** When true, this is a banner, else it is a video. Will need updating for native and audio support */
 	protected boolean isBanner;
-	
+
 	/** The content type of the banner template */
 	protected String contenttype = "";
-	
+
 	/** The HTML snippet for the banner */
 	public String htmltemplate = "";
 
 	// ////////////// VIDEO SPECIFIC TARGETTING
-	
+
 	/** The video duration */
 	protected int video_duration = 0;
-	
+
 	/** The video width */
 	protected int video_width = 0;
-	
+
 	/** The video height */
 	protected int video_height = 0;
-	
+
 	/** The video type */
 	protected String video_type = "";
-	
+
 	/** The video XML */
 	public String video_data = null;
-	
+
 	/** The video VAST protcol */
 	protected int video_protocol = 2;
-	
+
 	/** The video linearity */
 	protected int video_linearity = 1;
-	
+
 	/** The bitrate of the video */
 	protected Integer video_bitrate;
-	
+
 	/** The mime type of the video */
 	protected String video_mimetype = null;
 
@@ -129,19 +129,22 @@ public class AccountingCreative implements Comparable<Object> {
 
 	/** The RTB4FREE creative that was created from this obhect */
 	public Creative creative;
-	
+
+	// If this creative is tagged with categories. Used by bidswitch for example
+	private List<String> categories;
+
 	/** The RTB4FREE rules nodes that are the constraints for this creative */
 	protected List<Node> nodes = new ArrayList<Node>();
 
 	/** The daily budget for the creative */
 	volatile AtomicBigDecimal dailyBudget = null;
-	
+
 	/** The daily cost incurred today for this creative */
 	volatile AtomicBigDecimal dailyCost = null;
 
 	/* The hourly budget for this creative */
 	volatile AtomicBigDecimal hourlyBudget = null;
-	
+
 	/** The current hourly cost for this creative */
 	volatile AtomicBigDecimal hourlyCost = null;
 
@@ -150,37 +153,37 @@ public class AccountingCreative implements Comparable<Object> {
 
 	/** SQL name for the total cost attribute */
 	protected String TOTAL_COST = "total_cost";
-	
+
 	/** SQL name for the hourly cost attribute */
 	protected String HOURLY_COST = "hourly_cost";
-	
+
 	/** SQL name for the daily cost attribute */
 	protected String DAILY_COST = "daily_cost";
-	
+
 	/** SQL name for the id of this creative */
 	protected String BANNER_ID = "id";
-	
+
 	/** SQL name for the campaign that owns this record */
 	protected String CAMPAIGN_ID = "campaign_id";
-	
+
 	/** SQL name for the image URL attribute */
 	protected String IMAGE_URL = "iurl";
-	
+
 	/** SQL name for the updated attribute */
 	protected String UPDATED = "updated_at";
-	
+
 	/** SQL name for the content type attribute */
 	protected String CONTENT_TYPE = "contenttype";
-	
+
 	/** SQL name for the html snippet for this banner */
 	protected String HTML_TEMPLATE = "htmltemplate";
-	
+
 	/** SQL name for the daily budget of this creative */
 	protected String DAILY_BUDGET = "daily_budget";
-	
+
 	/** SQL name for the hourly budget */
 	protected String HOURLY_BUDGET = "hourly_budget";
-	
+
 	/** SQL name for the vast data attribute */
 	protected String VAST_DATA = "vast_video_outgoing_file";
 
@@ -204,7 +207,7 @@ public class AccountingCreative implements Comparable<Object> {
 			total_cost.set(Scanner.budgets.getCreativeTotalSpend("" + campaignid, bannerid, type));
 			dailyCost.set(Scanner.budgets.getCreativeDailySpend("" + campaignid, bannerid, type));
 			hourlyCost.set(Scanner.budgets.getCreativeHourlySpend("" + campaignid, bannerid, type));
-		
+
 			logger.debug("*** ELK TEST: Updating budgets: {}/{}/{}",campaignid, bannerid, type);
 			logger.debug("Total cost: {} hourly cost: {}, daily_cost: {}",total_cost.getDoubleValue(),
 					dailyCost.getDoubleValue(), hourlyCost.getDoubleValue());
@@ -213,7 +216,7 @@ public class AccountingCreative implements Comparable<Object> {
 		}
 		return true;
 	}
-	
+
 	public boolean isActive() throws Exception {
 
 		if (budgetExceeded())
@@ -275,6 +278,14 @@ public class AccountingCreative implements Comparable<Object> {
 		updated = myNode.get(UPDATED).asLong(0);
 
 		bid_ecpm.set(myNode.get("bid_ecpm").asDouble());
+
+		String cats = myNode.get("categories").asText("");
+		if(!cats.trim().equals("")){
+			categories = new ArrayList();
+			for (String c : cats.split(",")) {
+				categories.add(c.trim());
+			}
+		}
 
 		if (isBanner) {
 			width = myNode.get("width").asInt();
@@ -375,6 +386,7 @@ public class AccountingCreative implements Comparable<Object> {
 		c.price = bid_ecpm.doubleValue();
 		c.impid = "" + bannerid;
 		c.status = this.status;
+		c.categories = categories;
 
 		if (isBanner) {
 			if (contenttype != null && (contenttype.equalsIgnoreCase("OVERRIDE"))) {
@@ -436,7 +448,7 @@ public class AccountingCreative implements Comparable<Object> {
 	/**
 	 * Attach any defined deals to the creative. deal,deal,deal. Where
 	 * deal=id:price, thus id:price,id:price...
-	 * 
+	 *
 	 * @param c
 	 *            Campaign. The RTB campaign using the dealsl.
 	 */
@@ -460,7 +472,7 @@ public class AccountingCreative implements Comparable<Object> {
 
 	/**
 	 * Compiles the exchange specific attributes, like for Stroer and Adx.
-	 * 
+	 *
 	 * @param creative
 	 *            Creative. The creative we are attaching the extensions for.
 	 */
@@ -492,12 +504,6 @@ public class AccountingCreative implements Comparable<Object> {
 					case "tracking_url":
 						x.adxTrackingUrl = value;
 						break;
-					case "categories":
-						value = value.replaceAll("\"", "");
-						value = value.replaceAll("\\[", "");
-						value = value.replaceAll("\\]", "");
-						x.adxCategory = new Integer(value);
-						break;
 					case "vendor_type":
 						try {
 							x.adxVendorType = new Integer(value);
@@ -525,7 +531,7 @@ public class AccountingCreative implements Comparable<Object> {
 
 	/**
 	 * Compile the video specific components of a creative.
-	 * 
+	 *
 	 * @param c
 	 *            Campaign. The campaign to attach to.
 	 * @throws Exception
@@ -627,7 +633,7 @@ public class AccountingCreative implements Comparable<Object> {
 
 	/**
 	 * XML Escape a stringbuilder budder.
-	 * 
+	 *
 	 * @param sb
 	 *            StringBuilder. The data escape.
 	 */
